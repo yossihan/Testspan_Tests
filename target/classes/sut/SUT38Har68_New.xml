@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><sut validators="">
+
+	<amarisoft_1>
+		<class>com.airspan.testspan.jsystem.sysobjs.amarisoft.UeSimulatorServer</class>
+		<userName>root</userName>
+		<password>SWITswit</password>
+		<ipAddress>192.168.58.91</ipAddress>
+		<port>9002</port>
+	</amarisoft_1>
+
+	<!--<EPC>
+		<class>com.airspan.testspan.jsystem.sysobjs.epc.CiscoEpc</class>
+		<ipAddress>192.168.58.204</ipAddress>
+		<username>admin</username>
+		<password>SWIT!cis</password>
+	</EPC>-->
+	
+	<NetspanWS>
+		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_16_5.NetspanWsImpl</class>
+		<hostname>192.168.58.103</hostname>
+	</NetspanWS>
+
+	<!-- Harmony68 -->
+	<enb_1>       
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirHarmony4000</class>
+		<netspanName>SWIT38-Harmony68</netspanName>
+		<band>B41LH</band>
+		<duplexMode>TDD</duplexMode>
+		
+		<System_Profile>SR17.0v11 AirHarmony system defaults</System_Profile>
+		<eNB_Adv_Profile>SR16.0 AirHarmony Defaults 256UEs</eNB_Adv_Profile>
+		<Sync_Profile>SR15.0v2 AirHarmony GPS Only</Sync_Profile>
+		<Security_Profile>SR14.5 AirHarmony Cipher Enabled</Security_Profile>
+		<Net_Profile>SWIT38 Amarisoft EPC VLAN 37</Net_Profile>		
+		<Mng_Profile>SR16.0 AirHarmony: 5 minutes</Mng_Profile>
+		<Ngh_Profile>AirHarmony All PCI</Ngh_Profile>
+		<Son_Profile>SR14.2 AirHarmony Disabled</Son_Profile>
+		<MC_Profile>SR15.50v7_MM_GPL_TDD_Enabled</MC_Profile>
+
+		<!-- CELL1 Profiles -->
+		<cell_1>	
+			<Cell_Adv_Profile>SR15.50v6.7_MM_GPL_TDD</Cell_Adv_Profile>
+			<Embms_Profile>SR14.5 AirHarmony Disabled</Embms_Profile>
+			<Traffic_Mng>SR15.50v6.7_MM_GPL_TDD</Traffic_Mng>
+			<Call_Trace>AirHarmony Call Trace Disabled</Call_Trace>
+			<Mobility_Profile>SR17.0 AirHarmony</Mobility_Profile>
+			<Radio_Profile>SWIT38_Har68_20MHz_FC2_26dBm_Cell1</Radio_Profile>
+			<Tac>12594</Tac>		
+		</cell_1>
+		<!-- CELL2 Profiles -->
+		<cell_2>	
+			<Cell_Adv_Profile>SR15.50v6.7_MM_GPL_TDD</Cell_Adv_Profile>
+			<Embms_Profile>SR14.5 AirHarmony Disabled</Embms_Profile>
+			<Traffic_Mng>SR15.50v6.7_MM_GPL_TDD</Traffic_Mng>
+			<Call_Trace>AirHarmony Call Trace Disabled</Call_Trace>
+			<Mobility_Profile>SR17.0 AirHarmony</Mobility_Profile>
+			<Radio_Profile>SWIT38_Har68_20MHz_FC2_26dBm_Cell2CA</Radio_Profile>
+			<Tac>12594</Tac>		
+		</cell_2>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>24.20.2.68</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<ipAddress>24.20.2.68</ipAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>100.100.0.144</comName>
+				<port>4001</port>
+			</serialCom>
+		</xlp>
+		<dans index="0">
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Dan</class>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>100.100.0.144</comName>
+				<port>4002</port>
+			</serialCom>
+		</dans>
+	</enb_1> 
+	
+	<iperf_server_1>
+		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+		<userName>swit38</userName>
+		<password>swit38</password>
+		<ipAddress>192.168.60.111</ipAddress>
+	</iperf_server_1>
+
+</sut>
