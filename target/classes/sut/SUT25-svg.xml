@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?><sut validators="">
+ 
+ 
+	<EPC>
+		<class>com.airspan.testspan.jsystem.sysobjs.epc.CiscoEpc</class> 
+        <ipAddress>192.168.58.213</ipAddress>
+        <username>admin</username>
+        <password>SWIT!cis</password>
+    </EPC>
+ 
+
+	<!-- Netspan -->
+	<NetspanWS>
+		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
+        <hostname>100.100.0.103</hostname>
+	</NetspanWS>
+
+	<!-- DHCP -->
+	<DHCP>
+		<class>Utils.DHCP</class>
+		<ipAddress>192.168.58.43</ipAddress>
+		<username>root</username>
+		<password>SWITswit</password>
+	</DHCP>
+	
+	<!-- DNS -->
+	<DNS>
+		<class>Utils.DNS</class>
+		<ipAddress>192.168.58.73</ipAddress>
+		<username>root</username>
+		<password>SWITswit</password>
+	</DNS>
+	
+	<!-- Upgrade server -->
+	<UpgradeServer>
+		<class>EnodeB.EnodeBUpgradeServer</class>
+		<upgradeServerIp>100.100.0.250</upgradeServerIp>
+		<upgradeUser>swuser</upgradeUser>
+		<upgradePassword>sw_grp2</upgradePassword>
+		<protocolType>sftp</protocolType>
+	</UpgradeServer>
+ 
+	<ue1>
+		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+		<wanIpAddress>41.41.1.41</wanIpAddress>
+		<lanIpAddress>192.25.1.254</lanIpAddress>
+		<imsi>200010001004076</imsi>
+		<connectedToEnb>enb_1,enb_2</connectedToEnb>
+		<powerControllerMapping>powerControl/A6</powerControllerMapping>		
+		<ueCategory>4</ueCategory>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.25.1.254</strAddress>
+		</snmp>	
+	</ue1>
+
+<!-- 	Dynamic UEs ULdestantionAndListenToUL listenToDL -->
+
+	<ue2>
+		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+		<wanIpAddress>41.41.1.42</wanIpAddress>
+		<lanIpAddress>192.25.2.254</lanIpAddress>
+		<imsi>200010001004077</imsi>
+		<connectedToEnb>enb_1,enb_2</connectedToEnb>
+		<powerControllerMapping>powerControl/A6</powerControllerMapping>		
+		<ueCategory>4</ueCategory>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.25.2.254</strAddress>
+		</snmp>	
+	</ue2>
+	
+	<ue3>
+		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+		<wanIpAddress>41.41.1.43</wanIpAddress>
+		<lanIpAddress>192.25.3.254</lanIpAddress>
+		<imsi>200010001008848</imsi>
+		<connectedToEnb>enb_1,enb_2</connectedToEnb>
+		<powerControllerMapping>powerControl/A6</powerControllerMapping>		
+		<ueCategory>4</ueCategory>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.25.3.254</strAddress>
+		</snmp>	
+	</ue3>
+	
+	<ue4>
+		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+		<wanIpAddress>41.41.1.44</wanIpAddress>
+		<lanIpAddress>192.25.4.254</lanIpAddress>
+		<imsi>200010001007827</imsi>
+		<connectedToEnb>enb_1,enb_2</connectedToEnb>
+		<powerControllerMapping>powerControl/A5</powerControllerMapping>		
+		<ueCategory>4</ueCategory>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.25.4.254</strAddress>
+		</snmp>	
+	</ue4>
+	
+	
+	<ue5>
+		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+		<wanIpAddress>41.41.1.45</wanIpAddress>
+		<lanIpAddress>192.25.5.254</lanIpAddress>
+		<imsi>200010001007837</imsi>
+		<connectedToEnb>enb_1,enb_2</connectedToEnb>
+		<powerControllerMapping>powerControl/A5</powerControllerMapping>		
+		<ueCategory>4</ueCategory>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.25.5.254</strAddress>
+		</snmp>	
+	</ue5>
+
+
+<!-- 	<ue6>
+		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+		<wanIpAddress>41.41.1.46</wanIpAddress>
+		<lanIpAddress>192.25.6.254</lanIpAddress>
+		<imsi>200010001007826</imsi>
+		<connectedToEnb>enb_1,enb_2</connectedToEnb>
+		<powerControllerMapping>powerControl/A5</powerControllerMapping>		
+		<ueCategory>4</ueCategory>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.25.6.254</strAddress>
+		</snmp>	
+	</ue6> -->
+	
+	
+
+	<!-- AirVelocity configuration -->
+	<enb_1>
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirDensity386</class>
+		<netspanName>SWIT25-Density59</netspanName>
+		<duplexMode>FDD</duplexMode>
+		<band>B3</band>		
+		<donorName>Velocity58</donorName>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>h=KUK4dJ</readCommunity>
+			<writeCommunity>BcqRz?3Z</writeCommunity>		
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>10.255.250.59</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<band>B3</band>
+			<ipAddress>10.255.250.59</ipAddress>
+			<s1IpAddress>10.255.250.59</s1IpAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.12</comName>
+				<port>2015</port>
+			</serialCom>
+		</xlp>		
+		
+<!--    <ipsecTunnelEnabled>false</ipsecTunnelEnabled>
+		<ipsecCertificateMacAddress>00A00ACD0916</ipsecCertificateMacAddress>
+		<enodeBVersion>15_5</enodeBVersion>
+		<SkipCMP>true</SkipCMP>
+ -->
+		
+		<relay>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Relay</class>
+			<Role>Relay_eNodeB</Role>
+			<System_Default_Profile>SR15.5v22 AirDensity Relay system defaults</System_Default_Profile>
+            <Relay_Profile>Ninja new gena1</Relay_Profile>
+            <Relay_Advanced_Profile>SR15.5 AirDensity Defaults</Relay_Advanced_Profile>
+		</relay>
+
+	</enb_1>
+	
+	
+	<enb_2>
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirDensity386</class>
+		<netspanName>SWIT25-Density62</netspanName>
+		<duplexMode>FDD</duplexMode>
+		<band>B3</band>		
+		<donorName>Velocity58</donorName>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>h=KUK4dJ</readCommunity>
+			<writeCommunity>BcqRz?3Z</writeCommunity>		
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>10.255.250.62</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<band>B3</band>
+			<ipAddress>10.255.250.62</ipAddress>
+			<s1IpAddress>10.255.250.62</s1IpAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.183</comName>
+				<port>2030</port>
+			</serialCom>
+		</xlp>	
+		
+		<relay>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Relay</class>
+			<Role>Relay_eNodeB</Role>
+			<System_Default_Profile>SR15.5v22 AirDensity Relay system defaults</System_Default_Profile>
+            <Relay_Profile>Ninja new gena1</Relay_Profile>
+            <Relay_Advanced_Profile>SR15.5 AirDensity Defaults</Relay_Advanced_Profile>
+		</relay>
+
+	</enb_2>
+	
+	 
+	<enb_3>
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirVelocity1000</class>
+		<netspanName>SWIT25-Velocity58-donor</netspanName>
+		<duplexMode>TDD</duplexMode>
+		<band>B41</band>		
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>	
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>20.20.2.58</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<band>B3</band>
+			<ipAddress>20.20.2.58</ipAddress>
+			<s1IpAddress>20.20.125.1</s1IpAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.12</comName>
+				<port>2012</port>
+			</serialCom>
+		</xlp>	
+	</enb_3>
+
+	<!-- Rudat Attenuator configuration -->
+
+
+	<HO_attenuator>
+		<class>com.airspan.testspan.jsystem.sysobjs.attenuator.AttenuatorSet</class>
+		<attenuators index="0">
+			<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+			<maxAttenuation>30</maxAttenuation>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<port>2028</port>
+				<comName>192.168.58.183</comName>
+			</serialCom>
+		</attenuators>
+		<attenuators index="1">
+			<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+			<maxAttenuation>30</maxAttenuation>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<port>2029</port>
+				<comName>192.168.58.183</comName>
+			</serialCom>
+		</attenuators>
+		<waitTime>1000</waitTime>
+		<stepTime>500</stepTime>
+		<attenuationStep>2</attenuationStep>
+		<maxAttenuation>30</maxAttenuation>
+		<minAttenuation>0</minAttenuation>
+	</HO_attenuator>
+	
+
+
+	<!-- IP Power configuration -->
+
+
+	<powerControl>
+		<class>com.airspan.testspan.jsystem.sysobjs.power.controller.powerControl9820</class>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>                            
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V1</snmpVersion>
+			<strAddress>192.168.58.210</strAddress>
+		</snmp>
+		<ports index="0">
+			<class>com.airspan.testspan.jsystem.sysobjs.power.controller.PowerControllerPort</class>
+			<port>A5</port>
+			<description>dynamic_UEs</description>
+		</ports>
+		<ports index="1">
+			<class>com.airspan.testspan.jsystem.sysobjs.power.controller.PowerControllerPort</class>
+			<port>A6</port>
+			<description>dynamic_UEs</description>
+		</ports>
+		<ports index="2">
+			<class>com.airspan.testspan.jsystem.sysobjs.power.controller.PowerControllerPort</class>
+			<port>A7</port>
+			<description>enb_2</description>
+		</ports>
+	</powerControl>
+
+
+
+	<!-- STC configuration -->
+	
+    <stcController>
+        <class>com.airspan.testspan.jsystem.sysobjs.stc.controller.StcRestController</class>
+         <stc>
+            <class>com.airspan.testspan.jsystem.sysobj.stc.rest.implementation.StcChassis</class>
+	        <defaultConfigFile>C:\Users\swit\Documents\Spirent\SETUP25.tcc</defaultConfigFile>
+		    <chassisHost>192.168.58.150</chassisHost>
+		    <restMachineIP>192.168.58.201</restMachineIP>
+         </stc>
+    </stcController>
+	
+	<ue_lists>
+       <class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
+        <ueList index="0">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+             <description>enb_1.ptp</description>
+             <ues>ue1,ue2,ue3</ues>
+        </ueList>
+     </ue_lists>
+
+
+</sut>
