@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><sut validators="">
 
+	<AmariConfigFile>swit38Har34-test.cfg</AmariConfigFile>
+
 	<amarisoft_1>
 		<class>com.airspan.testspan.jsystem.sysobjs.amarisoft.UeSimulatorServer</class>
 		<userName>root</userName>
