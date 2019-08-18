@@ -48,7 +48,7 @@
 			</serialCom>
 		</dans>
 	</enb_1>
-<!--Ues-->
+	<!--Ues-->
 		<ue3>
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
 			<wanIpAddress>39.39.143.3</wanIpAddress>
@@ -63,20 +63,21 @@
 				<snmpVersion>V2</snmpVersion>
 				<strAddress>192.168.59.4:38803</strAddress>
 			</snmp>
-		</ue3>	
-	<!-- DL -->
-	<iperf_server_1>
-		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
-		<userName>swit38</userName>
-		<password>swit38</password>
-		<ipAddress>192.168.60.111</ipAddress>
-	</iperf_server_1>
+		</ue3>
+		
 	<!-- UL -->
-	<iperf_server_2>
+	<iperf_server_1>
 		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
 		<userName>swit38</userName>
 		<password>swit38</password>
 		<ipAddress>192.168.58.148</ipAddress>
 	</iperf_server_1>
+	<!-- DL -->
+	<iperf_server_2>
+		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+		<userName>swit38</userName>
+		<password>swit38</password>
+		<ipAddress>192.168.60.111</ipAddress>
+	</iperf_server_2>
 
 </sut>
