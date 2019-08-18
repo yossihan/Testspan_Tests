@@ -47,13 +47,36 @@
 				<port>4005</port>
 			</serialCom>
 		</dans>
-	</enb_1> 
-	
+	</enb_1>
+<!--Ues-->
+		<ue3>
+			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+			<wanIpAddress>39.39.143.3</wanIpAddress>
+			<lanIpAddress>192.38.3.254</lanIpAddress>
+			<imsi>200010001008756</imsi>
+			<connectedToEnb>enb_1</connectedToEnb>
+			<ueCategory>6</ueCategory>
+			<snmp>
+				<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+				<readCommunity>public</readCommunity>
+				<writeCommunity>private</writeCommunity>
+				<snmpVersion>V2</snmpVersion>
+				<strAddress>192.168.59.4:38803</strAddress>
+			</snmp>
+		</ue3>	
+	<!-- DL -->
 	<iperf_server_1>
 		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
 		<userName>swit38</userName>
 		<password>swit38</password>
 		<ipAddress>192.168.60.111</ipAddress>
+	</iperf_server_1>
+	<!-- UL -->
+	<iperf_server_2>
+		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+		<userName>swit38</userName>
+		<password>swit38</password>
+		<ipAddress>192.168.58.148</ipAddress>
 	</iperf_server_1>
 
 </sut>
