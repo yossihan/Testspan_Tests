@@ -165,7 +165,7 @@
     </target>
     <target name="t16">
         <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="0791f81e-e9cb-4623-afad-28d87d7f0116"/>
+            <sysproperty key="jsystem.uuid" value="21e0f7e7-725e-42de-bc4a-bfd99ab8b037"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
             <test name="com.airspan.testspan.jsystem.tests.traffic_generators.iperf.StopIperfTest.stopIperf"/>
@@ -173,7 +173,7 @@
     </target>
     <target name="t17">
         <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="21e0f7e7-725e-42de-bc4a-bfd99ab8b037"/>
+            <sysproperty key="jsystem.uuid" value="0791f81e-e9cb-4623-afad-28d87d7f0116"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
             <test name="com.airspan.testspan.jsystem.tests.traffic_generators.iperf.StopIperfTest.stopIperf"/>
