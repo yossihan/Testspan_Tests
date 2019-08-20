@@ -36,7 +36,6 @@
         <antcallback return="TestResultToReturn" target="t19"/>
         <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t20"/>
         <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t21"/>
-        <antcallback return="SnmpReturnValue, TestResultToReturn" target="t22"/>
     </target>
     <target name="t0">
         <jsystem showoutput="true">
@@ -212,14 +211,6 @@
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
             <test name="com.airspan.testspan.jsystem.tests.enodeb.SetServiceStateTest.setServiceState"/>
-        </jsystem>
-    </target>
-    <target name="t22">
-        <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="9b8163b1-3992-4288-819e-068168e0c20b"/>
-            <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
-            <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
-            <test name="com.airspan.testspan.jsystem.tests.ue.UeSnmpActionTest.ueSnmpAction"/>
         </jsystem>
     </target>
 </project>
