@@ -16,7 +16,7 @@
     <target name="execute scenario">
         <antcallback return="TestResultToReturn, StringToReturn" target="t0"/>
         <antcallback return="TestResultToReturn, StringToReturn" target="t1"/>
-        <antcallback return="TestResultToReturn" target="t2"/>
+        <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t2"/>
         <antcallback target="t3"/>
         <antcallback return="TestResultToReturn" target="t4"/>
         <antcallback return="TestResultToReturn" target="t5"/>
@@ -72,13 +72,13 @@
                 <antcallback target="t17"/>
             </sequential>
         </jsystemfor>
-        <antcallback return="TestResultToReturn" target="t18"/>
-        <antcallback return="TestResultToReturn" target="t19"/>
+        <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t18"/>
+        <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t19"/>
         <antcallback return="TestResultToReturn" target="t20"/>
         <antcallback target="t21"/>
         <antcallback return="TestResultToReturn, TpDlMbps, TpUlMbps, TpNumberOfUes, TpL4Protocol, TpFrameSize, TpCalcLabel, TpTrafficDirection, TpTestingTool" target="t22"/>
-        <antcallback return="TestResultToReturn" target="t23"/>
-        <antcallback return="TestResultToReturn" target="t24"/>
+        <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t23"/>
+        <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t24"/>
         <antcallback return="TestResultToReturn" target="t25"/>
         <antcallback return="TestResultToReturn" target="t26"/>
         <antcallback return="TestResultToReturn" target="t27"/>
@@ -94,7 +94,7 @@
                 <antcallback return="TestResultToReturn" target="t29"/>
             </sequential>
         </jsystemfor>
-        <antcallback return="TestResultToReturn" target="t30"/>
+        <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t30"/>
         <antcallback return="TestResultToReturn" target="t31"/>
         <antcallback target="t32"/>
         <antcallback return="TestResultToReturn" target="t33"/>
