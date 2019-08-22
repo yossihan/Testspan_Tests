@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sut validators="">
+	<NetspanWS>
+		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_16_5.NetspanWsImpl</class>
+		<hostname>192.168.59.148</hostname>
+	</NetspanWS>
+	
+	<!-- AS1250 -->
+	<enb_1>       
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirSpeed1250Wired</class>
+		<netspanName>TDE5-eNB1</netspanName>
+		<band>B42LH</band>
+		<duplexMode>TDD</duplexMode>
+		
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>h=KUK4dJ</readCommunity>
+			<writeCommunity>BcqRz?3Z</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>20.25.2.7</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<ipAddress>20.25.2.7</ipAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.60.200</comName>
+				<port>4001</port>
+			</serialCom>
+		</xlp>
+	</enb_1> 
+
+	<iperf_server_1>
+		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+		<userName>tde5</userName>
+		<password>tde5</password>
+		<ipAddress>192.168.60.112</ipAddress>
+	</iperf_server_1>
+
+</sut>
