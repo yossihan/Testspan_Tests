@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sut validators="">
+	<NetspanWS>
+		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_16_5.NetspanWsImpl</class>
+		<hostname>192.168.59.148</hostname>
+	</NetspanWS>
+	
+	<!-- AS1250 -->
+	<enb_1>       
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirSpeed1250Wired</class>
+		<netspanName>TDE5-eNB1</netspanName>
+		<band>B42LH</band>
+		<duplexMode>TDD</duplexMode>
+		
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>h=KUK4dJ</readCommunity>
+			<writeCommunity>BcqRz?3Z</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>20.25.2.7</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<ipAddress>20.25.2.7</ipAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.60.200</comName>
+				<port>4001</port>
+			</serialCom>
+		</xlp>
+	</enb_1> 
+	
+	<!--AirVelocity1500T -->
+	<enb_2>       
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirVelocity1500T</class>
+		<netspanName>TDE5-eNB2</netspanName>
+		<band>B42LH</band>
+		<duplexMode>TDD</duplexMode>
+		
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>h=KUK4dJ</readCommunity>
+			<writeCommunity>BcqRz?3Z</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>20.25.2.17</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<ipAddress>20.25.2.17</ipAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.60.200</comName>
+				<port>4002</port>
+			</serialCom>
+		</xlp>
+	</enb_2> 
+	
+	
+	<iperf_server_1>
+		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+		<userName>tde5</userName>
+		<password>tde5</password>
+		<ipAddress>192.168.60.112</ipAddress>
+	</iperf_server_1>
+
+
+
+	<dyn1>
+		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+		<wanIpAddress>44.44.5.10</wanIpAddress>
+		<lanIpAddress>198.20.0.254</lanIpAddress>
+		<imsi>200010001016080</imsi>
+		<powerControllerMapping>powerControl/A6</powerControllerMapping>
+		<connectedToEnb>enb_1</connectedToEnb>
+		<ueCategory>4</ueCategory>
+		
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>h=KUK4dJ</readCommunity>
+			<writeCommunity>BcqRz?3Z</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>20.25.2.7</strAddress>
+		</snmp>
+	</dyn1>
+
+
+	<dyn5>
+		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+		<wanIpAddress>44.44.5.121</wanIpAddress>
+		<lanIpAddress>198.20.5.254</lanIpAddress>
+		<imsi>303010001000027</imsi>
+		<powerControllerMapping>powerControl/A6</powerControllerMapping>
+		<connectedToEnb>enb_1</connectedToEnb>
+		<ueCategory>4</ueCategory>
+		
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>h=KUK4dJ</readCommunity>
+			<writeCommunity>BcqRz?3Z</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>20.25.2.7</strAddress>
+		</snmp>
+	</dyn5>
+
+
+	<EPC>
+		<class>com.airspan.testspan.jsystem.sysobjs.epc.CiscoEpc</class> 
+		<ipAddress>192.168.59.181</ipAddress> 
+		<username>admin</username>
+		<password>SWITswit</password>
+	</EPC>
+	
+	
+	
+   <rudat_set>
+        <class>com.airspan.testspan.jsystem.sysobjs.attenuator.AttenuatorSet</class>
+        <attenuators index="0">
+            <class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+            <maxAttenuation>30</maxAttenuation>
+            <serialCom>
+                <class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+                <port>4005</port>
+                <comName>192.168.60.200</comName>
+            </serialCom>
+        </attenuators>
+        <attenuators index="1">
+            <class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+            <maxAttenuation>30</maxAttenuation>
+            <serialCom>
+                <class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+                <port>4006</port>
+                <comName>192.168.60.200</comName>
+            </serialCom>
+        </attenuators>
+        <waitTime>1000</waitTime>
+        <stepTime>500</stepTime>
+        <attenuationStep>2</attenuationStep>
+        <maxAttenuation>30</maxAttenuation>
+        <minAttenuation>0</minAttenuation>
+      
+    </rudat_set>
+
+	
+
+
+	
+</sut>
