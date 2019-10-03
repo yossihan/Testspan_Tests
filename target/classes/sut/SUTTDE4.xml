@@ -24,7 +24,7 @@
 			<ipAddress>20.19.82.35</ipAddress>
 			<serialCom>
 				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
-				<comName>192.168.57.68</comName>
+				<comName>192.168.58.67</comName>
 				<port>4001</port>
 			</serialCom>
 		</xlp>
