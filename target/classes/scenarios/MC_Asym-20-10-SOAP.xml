@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <Credentials xmlns="http://Airspan.Netspan.WebServices">
+            <Username>wsadmin</Username>
+            <Password>password</Password>
+        </Credentials>
+    </soap:Header>
+    <soap:Body>
+        <EnbConfigSet xmlns="http://Airspan.Netspan.WebServices">
+            <NodeName>TDE4-AT1300-160</NodeName>
+            <EnbDetails>
+                <MultiCellProfile>AirStrend1300 LB</MultiCellProfile>
+                <LteCell>
+                    <CellNumber>1</CellNumber>
+                    <RadioProfile>AT1300-39750-MC20</RadioProfile>
+                </LteCell>
+                <LteCell>
+                    <CellNumber>2</CellNumber>
+                    <RadioProfile>AT1300-39750-MC10-1</RadioProfile>
+               </LteCell>
+            </EnbDetails>
+        </EnbConfigSet>
+    </soap:Body>
+</soap:Envelope>
