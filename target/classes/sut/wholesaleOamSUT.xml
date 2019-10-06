@@ -11,7 +11,15 @@
 		<netspanName>TDE5-eNB1</netspanName>
 		<band>B42LH</band>
 		<duplexMode>TDD</duplexMode>
-		
+		<cell_1>
+            <Cell_Adv_Profile>SR15.2 AirSpeed Defaults_64QAM_Disabled-I:128</Cell_Adv_Profile>
+            <Radio_Profile>TDE5_eNB1S2-I:129</Radio_Profile>
+            <Mobility_Profile>SR16.5v1 AirSpeed-Relay_Victor-I:75</Mobility_Profile>
+            <Embms_Profile>SR15.2 AirSpeed Disabled-I:56</Embms_Profile>
+            <Traffic_Mng>SR15.5 AirSpeed Defaults-I:50</Traffic_Mng>
+            <Call_Trace>AirSpeed Call Trace Disabled-I:48</Call_Trace>
+            <Tac>12594</Tac>
+        </cell_1>
 		<snmp>
 			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
 			<readCommunity>h=KUK4dJ</readCommunity>
@@ -31,7 +39,7 @@
 	</enb_1> 
 	
 	<!--AirVelocity1500T -->
-	<enb_2>       
+<!--	<enb_2>       
 		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirVelocity1500T</class>
 		<netspanName>TDE5-eNB2</netspanName>
 		<band>B42LH</band>
@@ -53,7 +61,7 @@
 				<port>4002</port>
 			</serialCom>
 		</xlp>
-	</enb_2> 
+	</enb_2> -->
 	
 	
 	<iperf_server_1>
