@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sut validators="">
 	<NetspanWS>
-		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_16_5.NetspanWsImpl</class>
+		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_00.NetspanWsImpl</class>
 		<hostname>192.168.59.148</hostname>
 	</NetspanWS>
 	
@@ -39,7 +39,7 @@
 	</enb_1> 
 	
 	<!--AirVelocity1500T -->
-<!--	<enb_2>       
+	<enb_2>       
 		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirVelocity1500T</class>
 		<netspanName>TDE5-eNB2</netspanName>
 		<band>B42LH</band>
@@ -61,7 +61,7 @@
 				<port>4002</port>
 			</serialCom>
 		</xlp>
-	</enb_2> -->
+	</enb_2> 
 	
 	
 	<iperf_server_1>
