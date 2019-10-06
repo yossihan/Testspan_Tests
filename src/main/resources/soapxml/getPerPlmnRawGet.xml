@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <Credentials xmlns="http://Airspan.Netspan.WebServices">
+            <Username>wsadmin</Username>
+            <Password>password</Password>
+        </Credentials>
+    </soap:Header>
+    <soap:Body>
+        <PerPlmnRawGet xmlns="http://Airspan.Netspan.WebServices">
+            <NodeName>enb_1</NodeName>
+            <NodeId>a8875050060471a</NodeId>
+            <DateStart>16:30</DateStart>
+            <DateEnd>16:45</DateEnd>
+        </PerPlmnRawGet>
+    </soap:Body>
+</soap:Envelope>
