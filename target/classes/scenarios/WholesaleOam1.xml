@@ -31,10 +31,11 @@
         <antcallback return="TestResultToReturn" target="t14"/>
         <antcallback return="TestResultToReturn" target="t15"/>
         <antcallback return="TestResultToReturn" target="t16"/>
-        <antcallback return="TestResultToReturn, SoapValue1ToReturn, SoapValue2ToReturn, SoapValue3ToReturn, SoapValue4ToReturn, SoapValue5ToReturn, SoapValue6ToReturn" target="t17"/>
+        <antcallback return="TestResultToReturn" target="t17"/>
         <antcallback return="TestResultToReturn, SoapValue1ToReturn, SoapValue2ToReturn, SoapValue3ToReturn, SoapValue4ToReturn, SoapValue5ToReturn, SoapValue6ToReturn" target="t18"/>
-        <antcallback target="t19"/>
+        <antcallback return="TestResultToReturn, SoapValue1ToReturn, SoapValue2ToReturn, SoapValue3ToReturn, SoapValue4ToReturn, SoapValue5ToReturn, SoapValue6ToReturn" target="t19"/>
         <antcallback target="t20"/>
+        <antcallback target="t21"/>
     </target>
     <target name="t0">
         <jsystem showoutput="true">
@@ -174,15 +175,15 @@
     </target>
     <target name="t17">
         <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="8bf5d2f3-7a24-470d-b0b0-18ab7e871f0e"/>
+            <sysproperty key="jsystem.uuid" value="51de2599-2254-4711-973d-cfa6e49956e0"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
-            <test name="com.airspan.testspan.jsystem.tests.web_services.GetSoapRequestTest.soapGetRequest"/>
+            <test name="com.airspan.testspan.jsystem.tests.general.PingTest.ping"/>
         </jsystem>
     </target>
     <target name="t18">
         <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="df7a6ee1-cd79-4e4e-93eb-31b1cdbd31d5"/>
+            <sysproperty key="jsystem.uuid" value="8bf5d2f3-7a24-470d-b0b0-18ab7e871f0e"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
             <test name="com.airspan.testspan.jsystem.tests.web_services.GetSoapRequestTest.soapGetRequest"/>
@@ -190,13 +191,21 @@
     </target>
     <target name="t19">
         <jsystem showoutput="true">
+            <sysproperty key="jsystem.uuid" value="df7a6ee1-cd79-4e4e-93eb-31b1cdbd31d5"/>
+            <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
+            <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
+            <test name="com.airspan.testspan.jsystem.tests.web_services.GetSoapRequestTest.soapGetRequest"/>
+        </jsystem>
+    </target>
+    <target name="t20">
+        <jsystem showoutput="true">
             <sysproperty key="jsystem.uuid" value="1bf29963-9a90-458d-812a-5c4633b0e3e9"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
             <test name="com.airspan.testspan.jsystem.tests.deprecated.TrafficGeneratorController.stopTraffic"/>
         </jsystem>
     </target>
-    <target name="t20">
+    <target name="t21">
         <jsystem showoutput="true">
             <sysproperty key="jsystem.uuid" value="f8fea1d6-1273-46dd-8bcc-8f9d537eeb0f"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
