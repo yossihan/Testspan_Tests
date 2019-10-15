@@ -8,10 +8,9 @@
     </soap:Header>
     <soap:Body>
         <PerPlmnRawGet xmlns="http://Airspan.Netspan.WebServices">
-            <NodeName>enb_1</NodeName>
             <NodeId>a8875050060471a</NodeId>
-            <DateStart>16:30</DateStart>
-            <DateEnd>16:45</DateEnd>
+            <DateStart>2019-10-15 10:10:00</DateStart>
+            <DateEnd>2019-10-15 10:15:00</DateEnd>
         </PerPlmnRawGet>
     </soap:Body>
 </soap:Envelope>
