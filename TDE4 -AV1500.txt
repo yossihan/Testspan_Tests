@@ -1,0 +1,60 @@
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+<sut validators="">
+	<NetspanWS>
+		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
+		<hostname>192.168.57.153</hostname>
+	</NetspanWS>
+
+	<!-- AirStrand1500 -->
+	<enb_1>
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirVelocity1500</class>
+		<netspanName>TDE4-AV1500-162</netspanName>
+		<S1>AirVelocity1500 LB</S1>
+		<S2>AS1500-55840-MC20</S2>
+		<S3>AT1300-56240-MC10-1</S3>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>BcqRz?3Z</readCommunity>
+			<writeCommunity>BcqRz?3Z</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>20.19.82.37</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<ipAddress>20.19.82.37</ipAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.67</comName>
+				<port>4003</port>
+			</serialCom>
+		</xlp>
+	</enb_1>
+
+	<!-- <dyn1>
+		<class>com.airspan.testspan.jsystem.sysobjs.ue.ZemtelUe</class>
+		<wanIpAddress>44.44.4.1</wanIpAddress>
+		<lanIpAddress>198.15.2.254</lanIpAddress>
+		<imsi>200010001008289</imsi>
+		<powerControllerMapping>powerControl/A6</powerControllerMapping>
+		<connectedToEnb>enb_1</connectedToEnb>
+		<ueCategory>12</ueCategory>
+
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>h=KUK4dJ</readCommunity>
+			<writeCommunity>BcqRz?3Z</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>20.19.82.35</strAddress>
+		</snmp>
+	</dyn1> -->
+
+	<EPC>
+		<class>com.airspan.testspan.jsystem.sysobjs.epc.CiscoEpc</class>
+		<ipAddress>192.168.61.117</ipAddress>
+		<username>admin</username>
+		<password>SWITcis!</password>
+	</EPC>
+
+</sut>
+
