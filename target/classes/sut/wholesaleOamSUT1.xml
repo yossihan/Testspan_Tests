@@ -148,6 +148,27 @@
         <minAttenuation>0</minAttenuation>
       
     </rudat_set>
+	
+	<rudatGPS_set>
+        <class>com.airspan.testspan.jsystem.sysobjs.attenuator.AttenuatorSet</class>
+        <attenuators index="0">
+            <class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+            <maxAttenuation>30</maxAttenuation>
+            <serialCom>
+                <class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+                <port>4009</port>
+                <comName>192.168.60.200</comName>
+            </serialCom>
+        </attenuators>
+        <waitTime>1000</waitTime>
+        <stepTime>500</stepTime>
+        <attenuationStep>2</attenuationStep>
+        <maxAttenuation>30</maxAttenuation>
+        <minAttenuation>0</minAttenuation>
+      
+    </rudatGPS_set>
+	
+	
 
 	
 
