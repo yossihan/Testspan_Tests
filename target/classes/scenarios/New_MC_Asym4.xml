@@ -18,7 +18,8 @@
         <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t1"/>
         <antcallback target="t2"/>
         <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t3"/>
-        <antcallback return="TestResultToReturn" target="t4"/>
+        <antcallback return="SnmpReturnValue, TestResultToReturn" target="t4"/>
+        <antcallback return="TestResultToReturn" target="t5"/>
     </target>
     <target name="t0">
         <jsystem showoutput="true">
@@ -53,6 +54,14 @@
         </jsystem>
     </target>
     <target name="t4">
+        <jsystem showoutput="true">
+            <sysproperty key="jsystem.uuid" value="dbc0a1cf-2d96-4b06-96d8-fb6b5569e948"/>
+            <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
+            <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
+            <test name="com.airspan.testspan.jsystem.tests.ue.UeSnmpActionTest.ueSnmpAction"/>
+        </jsystem>
+    </target>
+    <target name="t5">
         <jsystem showoutput="true">
             <sysproperty key="jsystem.uuid" value="5df7a310-21a5-4b2b-ab72-4f9c00d3bdf9"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
