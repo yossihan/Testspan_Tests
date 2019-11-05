@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><sut validators="">
 
+	<SW_Path>123</SW_Path>
+	<SW>123</SW>
+	
 	<NetspanWS>
 		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
 		<hostname>192.168.58.103</hostname>
@@ -36,6 +39,14 @@
 				<port>4005</port>
 			</serialCom>
 		</xlp>
+		<dans index="0">
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Dan</class>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.12</comName>
+				<port>4006</port>
+			</serialCom>
+		</dans>
 	</enb_1> 
 	<!--static Ues -->
 		<ue5>
