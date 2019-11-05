@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><sut validators="">
 
 	<SW_Path>123</SW_Path>
-	<SW>123</SW>
+	<SW_Image>123</SW_Image>
 	
 	<NetspanWS>
 		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
