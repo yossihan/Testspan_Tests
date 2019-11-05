@@ -24,8 +24,8 @@
         <antcallback return="SnmpReturnValue, TestResultToReturn" target="t7"/>
         <antcallback return="SnmpReturnValue, TestResultToReturn" target="t8"/>
         <antcallback return="TestResultToReturn" target="t9"/>
-        <antcallback return="TestResultToReturn" target="t10"/>
-        <antcallback target="t11"/>
+        <antcallback target="t10"/>
+        <antcallback return="TestResultToReturn" target="t11"/>
         <antcallback return="TestResultToReturn" target="t12"/>
         <antcallback return="TestResultToReturn" target="t13"/>
         <antcallback return="TestResultToReturn" target="t14"/>
@@ -113,21 +113,13 @@
     </target>
     <target name="t9">
         <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="fcc10085-0e47-4f46-bdd5-9ed68be01fa9"/>
+            <sysproperty key="jsystem.uuid" value="7790f4d9-879b-4e47-835b-3ee374e1f38f"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
-            <test name="com.airspan.testspan.jsystem.tests.deprecated.TrafficGeneratorController.startTraffic"/>
+            <test name="com.airspan.testspan.jsystem.tests.traffic_generators.iperf.NewStartIperfTest.startIperf"/>
         </jsystem>
     </target>
     <target name="t10">
-        <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="1e4bd734-373b-4039-bff5-ab9ce8c021c9"/>
-            <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
-            <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
-            <test name="com.airspan.testspan.jsystem.tests.deprecated.TrafficGeneratorController.startTraffic"/>
-        </jsystem>
-    </target>
-    <target name="t11">
         <jsystem showoutput="true">
             <sysproperty key="jsystem.uuid" value="42150153-f669-4b87-ae43-972dfa8d0350"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
@@ -135,7 +127,7 @@
             <test name="com.airspan.testspan.jsystem.tests.general.WaitTest.waitTest"/>
         </jsystem>
     </target>
-    <target name="t12">
+    <target name="t11">
         <jsystem showoutput="true">
             <sysproperty key="jsystem.uuid" value="9eb74075-aa62-4cee-ba76-a404755d01bc"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
@@ -143,7 +135,7 @@
             <test name="com.airspan.testspan.jsystem.tests.ue.ValidateConnectedUes.validateUesAreConnectedToEnodebViaEpc"/>
         </jsystem>
     </target>
-    <target name="t13">
+    <target name="t12">
         <jsystem showoutput="true">
             <sysproperty key="jsystem.uuid" value="b43dd835-5471-42b9-b851-2b1b233d4cb7"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
@@ -151,7 +143,7 @@
             <test name="com.airspan.testspan.jsystem.tests.ue.ValidateConnectedUes.validateUesAreConnectedToEnodebViaEpc"/>
         </jsystem>
     </target>
-    <target name="t14">
+    <target name="t13">
         <jsystem showoutput="true">
             <sysproperty key="jsystem.uuid" value="2aaade72-9749-4072-b512-c24e6defd11e"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
@@ -159,7 +151,7 @@
             <test name="com.airspan.testspan.jsystem.tests.enodeb.ValidateConnectedUeStatusTest.validateConnectedUeStatus"/>
         </jsystem>
     </target>
-    <target name="t15">
+    <target name="t14">
         <jsystem showoutput="true">
             <sysproperty key="jsystem.uuid" value="36e1a8aa-b57a-4869-9628-bd130cb0e7d1"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
@@ -167,7 +159,7 @@
             <test name="com.airspan.testspan.jsystem.tests.ue.ValidateConnectedUes.validateUesAreConnectedToEnodebViaEpc"/>
         </jsystem>
     </target>
-    <target name="t16">
+    <target name="t15">
         <jsystem showoutput="true">
             <sysproperty key="jsystem.uuid" value="0d4a4b7f-d818-41da-98bc-0d32b97d5d54"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
@@ -175,7 +167,7 @@
             <test name="com.airspan.testspan.jsystem.tests.ue.ValidateConnectedUes.validateUesAreConnectedToEnodebViaEpc"/>
         </jsystem>
     </target>
-    <target name="t17">
+    <target name="t16">
         <jsystem showoutput="true">
             <sysproperty key="jsystem.uuid" value="2f99f82f-003c-4e8f-85a5-7e7954639bca"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
@@ -183,12 +175,20 @@
             <test name="com.airspan.testspan.jsystem.tests.web_services.ValidateSoapResponseTest.validateSoapResponse"/>
         </jsystem>
     </target>
-    <target name="t18">
+    <target name="t17">
         <jsystem showoutput="true">
             <sysproperty key="jsystem.uuid" value="2583bcb0-86f1-4227-8d55-376734e34532"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
             <test name="com.airspan.testspan.jsystem.tests.web_services.ValidateSoapResponseTest.validateSoapResponse"/>
+        </jsystem>
+    </target>
+    <target name="t18">
+        <jsystem showoutput="true">
+            <sysproperty key="jsystem.uuid" value="1a1e705b-1fcc-442f-aa07-f8ee51771763"/>
+            <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
+            <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
+            <test name="com.airspan.testspan.jsystem.tests.traffic_generators.iperf.NewStopIperfTest.stopIperf"/>
         </jsystem>
     </target>
     <target name="t19">
