@@ -13,8 +13,8 @@
                 <HardwareCategory>AirHarmony</HardwareCategory>
                 <SoftwareFileInfo>
                     <ImageType>LTE</ImageType>
-                    <FileNameWithPath>/upload/enodeb.14_17_00_501.enc</FileNameWithPath>
-                    <Version>14.17.00.501</Version>
+                    <FileNameWithPath>SW_Path</FileNameWithPath>
+                    <Version>SW</Version>
                 </SoftwareFileInfo>
             </SoftwareImage>
         </SoftwareImageUpdate>
