@@ -14,7 +14,7 @@
                 <SoftwareFileInfo>
                     <ImageType>LTE</ImageType>
                     <FileNameWithPath>SW_Path</FileNameWithPath>
-                    <Version>SW</Version>
+                    <Version>SW_Image</Version>
                 </SoftwareFileInfo>
             </SoftwareImage>
         </SoftwareImageUpdate>
