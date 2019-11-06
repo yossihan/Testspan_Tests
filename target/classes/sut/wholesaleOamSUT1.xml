@@ -80,7 +80,7 @@
 
 		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
 
-		<wanIpAddress>44.44.5.10</wanIpAddress>
+		<wanIpAddress>91.97.5.100</wanIpAddress>
 
 		<lanIpAddress>198.20.0.254</lanIpAddress>
 
@@ -118,7 +118,7 @@
 
 		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
 
-		<wanIpAddress>44.44.5.121</wanIpAddress>
+		<wanIpAddress>91.97.5.104</wanIpAddress>
 
 		<lanIpAddress>198.20.5.254</lanIpAddress>
 
