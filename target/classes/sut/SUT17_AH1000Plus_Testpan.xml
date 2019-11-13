@@ -56,16 +56,14 @@
 			<imsi>200010001004361</imsi>
 			<connectedToEnb>enb_1</connectedToEnb>
 			<ueCategory>6</ueCategory>
-			<!--Have to update
 			<snmp>
 				<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
 				<readCommunity>public</readCommunity>
 				<writeCommunity>private</writeCommunity>
 				<snmpVersion>V2</snmpVersion>
-				<strAddress>192.168.59.4:38803</strAddress>
+				<strAddress>fd02:20:20:62::42</strAddress>
 			</snmp>
-			-->
-		</ue5>
+			</ue5>
 		<ue6>
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
 			<wanIpAddress>42.42.17.176</wanIpAddress>
@@ -73,15 +71,13 @@
 			<imsi>200010001004359</imsi>
 			<connectedToEnb>enb_1</connectedToEnb>
 			<ueCategory>6</ueCategory>
-			<!--Have to update
 			<snmp>
 				<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
 				<readCommunity>public</readCommunity>
 				<writeCommunity>private</writeCommunity>
 				<snmpVersion>V2</snmpVersion>
-				<strAddress>192.168.59.4:38803</strAddress>
+				<strAddress>fd02:20:20:62::42</strAddress>
 			</snmp>
-			-->
 		</ue6>
 		
 		<!--dynamic Ue -->
@@ -92,15 +88,13 @@
 			<imsi>200010001004113</imsi>
 			<connectedToEnb>enb_1</connectedToEnb>
 			<ueCategory>6</ueCategory>
-			<!--Have to update
 			<snmp>
 				<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
 				<readCommunity>public</readCommunity>
 				<writeCommunity>private</writeCommunity>
 				<snmpVersion>V2</snmpVersion>
-				<strAddress>192.168.59.4:38803</strAddress>
+				<strAddress>fd02:20:20:62::42</strAddress>
 			</snmp>
-			-->
 		</ue6>
 		
 		<ue_lists>
@@ -122,19 +116,19 @@
         </ueList>
                
     </ue_lists>
-	<!-- UL -->
+	<!-- DL -->
 	<iperf_server_1>
 		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
 		<userName>swit17_1</userName>
 		<password>swit17_1</password>
-		<ipAddress>100.100.0.171</ipAddress>
+		<ipAddress>100.100.0.34</ipAddress>
 	</iperf_server_1>
-	<!-- DL -->
+	<!-- UL -->
 	<iperf_server_2>
 		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
 		<userName>swit17_1</userName>
 		<password>swit17_1</password>
-		<ipAddress>100.100.0.34</ipAddress>
+		<ipAddress>100.100.0.171</ipAddress>
 	</iperf_server_2>
 	
 </sut>
