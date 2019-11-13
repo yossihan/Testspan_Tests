@@ -102,6 +102,26 @@
 			</snmp>
 			-->
 		</ue6>
+		
+		<ue_lists>
+        <class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
+        <ueList index="0">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.ptp</description>
+            <ues>dyn4</ues>
+        </ueList>
+		<ueList index="2">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.pt2p</description>
+            <ues>static5,static6</ues>
+        </ueList>
+        <ueList index="1">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.pt3p</description>
+            <ues>static5,static6,dyn4</ues>
+        </ueList>
+               
+    </ue_lists>
 	<!-- UL -->
 	<iperf_server_1>
 		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
@@ -116,9 +136,5 @@
 		<password>swit17_1</password>
 		<ipAddress>100.100.0.34</ipAddress>
 	</iperf_server_2>
-
-	
-
-
 	
 </sut>
