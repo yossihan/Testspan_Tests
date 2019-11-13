@@ -224,7 +224,7 @@
         </ueList>
         <ueList index="2">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
-            <description>enb_2.ptp</description>
+            <description>enb_1.ptp</description>
             <ues>dyn5</ues>
         </ueList>
         
