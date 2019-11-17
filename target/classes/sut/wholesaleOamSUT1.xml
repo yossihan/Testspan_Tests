@@ -105,7 +105,7 @@
 				<port>4010</port>
 			</serialCom>
 		</xlp>
-	</enb_2> 
+	</enb_4> 
 	
 	<iperf_server_1>
 		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
