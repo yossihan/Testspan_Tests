@@ -53,8 +53,8 @@
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
 			<wanIpAddress>42.42.17.175</wanIpAddress>
 			<lanIpAddress>192.17.5.254</lanIpAddress>
-			<IPerfUlMachine>192.17.5.240</IPerfUlMachine>
-			<IPerfDlMachine>91.91.17.17</IPerfDlMachine>
+			<iperfUlIpAddress>192.17.5.240</iperfUlIpAddress>
+			<iperfDlIpAddress>91.91.17.17</iperfDlIpAddress>
 			<imsi>200010001004361</imsi>
 			<connectedToEnb>enb_1</connectedToEnb>
 			<ueCategory>6</ueCategory>
@@ -70,8 +70,8 @@
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
 			<wanIpAddress>42.42.17.176</wanIpAddress>
 			<lanIpAddress>192.17.6.254</lanIpAddress>
-			<IPerfUlMachine>192.17.6.240</IPerfUlMachine>
-			<IPerfDlMachine>91.91.17.21</IPerfDlMachine>
+			<iperfUlIpAddress>192.17.6.240</iperfUlIpAddress>
+			<iperfDlIpAddress>91.91.17.21</iperfDlIpAddress>
 			<imsi>200010001004359</imsi>
 			<connectedToEnb>enb_1</connectedToEnb>
 			<ueCategory>6</ueCategory>
@@ -89,8 +89,8 @@
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
 			<wanIpAddress>42.42.17.173</wanIpAddress>
 			<lanIpAddress>192.17.3.254</lanIpAddress>
-			<IPerfUlMachine>192.17.3.240</IPerfUlMachine>
-			<IPerfDlMachine>91.91.17.9</IPerfDlMachine>
+			<iperfUlIpAddress>192.17.3.240</iperfUlIpAddress>
+			<iperfDlIpAddress>91.91.17.9</iperfDlIpAddress>
 			<imsi>200010001004113</imsi>
 			<connectedToEnb>enb_1</connectedToEnb>
 			<ueCategory>6</ueCategory>
@@ -107,8 +107,8 @@
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
 			<wanIpAddress>42.42.17.174</wanIpAddress>
 			<lanIpAddress>192.17.4.254</lanIpAddress>
-			<IPerfUlMachine>192.17.4.240</IPerfUlMachine>
-			<IPerfDlMachine>91.91.17.13</IPerfDlMachine>
+			<iperfUlIpAddress>192.17.4.240</iperfUlIpAddress>
+			<iperfDlIpAddress>91.91.17.13</iperfDlIpAddress>
 			<imsi>200010001004113</imsi>
 			<connectedToEnb>enb_1</connectedToEnb>
 			<ueCategory>6</ueCategory>
