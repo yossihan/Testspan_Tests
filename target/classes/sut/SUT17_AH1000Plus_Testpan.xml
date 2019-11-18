@@ -53,6 +53,8 @@
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
 			<wanIpAddress>42.42.17.175</wanIpAddress>
 			<lanIpAddress>192.17.5.254</lanIpAddress>
+			<IPerfUlMachine>192.17.5.240</IPerfUlMachine>
+			<IPerfDlMachine>91.91.17.17</IPerfDlMachine>
 			<imsi>200010001004361</imsi>
 			<connectedToEnb>enb_1</connectedToEnb>
 			<ueCategory>6</ueCategory>
@@ -68,6 +70,8 @@
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
 			<wanIpAddress>42.42.17.176</wanIpAddress>
 			<lanIpAddress>192.17.6.254</lanIpAddress>
+			<IPerfUlMachine>192.17.6.240</IPerfUlMachine>
+			<IPerfDlMachine>91.91.17.21</IPerfDlMachine>
 			<imsi>200010001004359</imsi>
 			<connectedToEnb>enb_1</connectedToEnb>
 			<ueCategory>6</ueCategory>
@@ -81,10 +85,12 @@
 		</ue6>
 		
 		<!--dynamic Ue -->
-		<ue6>
+		<ue3>
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
 			<wanIpAddress>42.42.17.173</wanIpAddress>
 			<lanIpAddress>192.17.3.254</lanIpAddress>
+			<IPerfUlMachine>192.17.3.240</IPerfUlMachine>
+			<IPerfDlMachine>91.91.17.9</IPerfDlMachine>
 			<imsi>200010001004113</imsi>
 			<connectedToEnb>enb_1</connectedToEnb>
 			<ueCategory>6</ueCategory>
@@ -95,7 +101,25 @@
 				<snmpVersion>V2</snmpVersion>
 				<strAddress>fd02:20:20:62::42</strAddress>
 			</snmp>
-		</ue6>
+		</ue3>
+		
+		<ue4>
+			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+			<wanIpAddress>42.42.17.174</wanIpAddress>
+			<lanIpAddress>192.17.4.254</lanIpAddress>
+			<IPerfUlMachine>192.17.4.240</IPerfUlMachine>
+			<IPerfDlMachine>91.91.17.13</IPerfDlMachine>
+			<imsi>200010001004113</imsi>
+			<connectedToEnb>enb_1</connectedToEnb>
+			<ueCategory>6</ueCategory>
+			<snmp>
+				<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+				<readCommunity>public</readCommunity>
+				<writeCommunity>private</writeCommunity>
+				<snmpVersion>V2</snmpVersion>
+				<strAddress>fd02:20:20:62::42</strAddress>
+			</snmp>
+		</ue4>
 		
 		<ue_lists>
         <class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
