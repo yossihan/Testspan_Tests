@@ -126,17 +126,17 @@
         <ueList index="0">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.ptp</description>
-            <ues>dyn4</ues>
+            <ues>ue4</ues>
         </ueList>
 		<ueList index="2">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.pt2p</description>
-            <ues>static5,static6</ues>
+            <ues>ue5,ue6</ues>
         </ueList>
         <ueList index="1">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.pt3p</description>
-            <ues>static5,static6,dyn4</ues>
+            <ues>ue4,ue5,ue6</ues>
         </ueList>
                
     </ue_lists>
