@@ -294,5 +294,22 @@
 
 
 
+			<pingServer1>
+	              <class>com.airspan.testspan.jsystem.sysobjs.station.WorkStation</class>
+	              <ipAddress>192.168.60.113</ipAddress>
+	              <userName>tde5</userName>
+	              <password>tde5</password>
+	              <operationSystemName>Linux</operationSystemName>
+	       </pingServer1>
+	
+	       <pingServer2>
+	              <class>com.airspan.testspan.jsystem.sysobjs.station.WorkStation</class>
+	              <ipAddress>192.168.60.112</ipAddress>
+	              <userName>tde5</userName>
+	              <password>tde5</password>
+	              <operationSystemName>Linux</operationSystemName>
+	       </pingServer2>
+
+
 	
 </sut>
