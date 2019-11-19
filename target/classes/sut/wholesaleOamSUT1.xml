@@ -3,12 +3,14 @@
 
 
 	<SingleDUT>enb_1</SingleDUT>
-	<SingleDUTCell1>enb_1.1</SingleDUTCell1>
-	<SingleDUTCell2>enb_1.2<SingleDUTCell2>
     <SecondSingleDUT>enb_2</SecondSingleDUT>
 	<fourSingleDUT>enb_4</fourSingleDUT>
 	<UEs>dyn1,dyn5</UEs>
 	<NetspanVersion>17.00</NetspanVersion>
+	
+	
+	
+	
 	 
 	<NetspanWS>
 		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
@@ -26,7 +28,7 @@
 		<cell_1>
             <Cell_Adv_Profile>SR15.2 AirSpeed Defaults_64QAM_Disabled-I:128</Cell_Adv_Profile>
             <Radio_Profile>TDE5_eNB1S2-I:129</Radio_Profile>
-			<Network_Profile>TDe5-eNB1and2-_w_OAM</Radio_Profile>
+			<Network_Profile>TDe5-eNB1and2-_w_OAM</Network_Profile>
             <Mobility_Profile>SR16.5v1 AirSpeed-Relay_Victor-I:75</Mobility_Profile>
             <Embms_Profile>SR15.2 AirSpeed Disabled-I:56</Embms_Profile>
             <Traffic_Mng>SR15.5 AirSpeed Defaults-I:50</Traffic_Mng>
@@ -314,21 +316,21 @@
 
 
 
-			<pingServer1>
+	<pingServer1>
 	              <class>com.airspan.testspan.jsystem.sysobjs.station.WorkStation</class>
 	              <ipAddress>192.168.60.113</ipAddress>
 	              <userName>tde5</userName>
 	              <password>tde5</password>
 	              <operationSystemName>Linux</operationSystemName>
-	       </pingServer1>
+	</pingServer1>
 	
-	       <pingServer2>
+	<pingServer2>
 	              <class>com.airspan.testspan.jsystem.sysobjs.station.WorkStation</class>
 	              <ipAddress>192.168.60.112</ipAddress>
 	              <userName>tde5</userName>
 	              <password>tde5</password>
 	              <operationSystemName>Linux</operationSystemName>
-	       </pingServer2>
+	</pingServer2>
 
 
 	
