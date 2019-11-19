@@ -8,9 +8,9 @@
     </soap:Header>
     <soap:Body>
         <EnbConfigSet xmlns="http://Airspan.Netspan.WebServices">
-            <NodeName>enb_1</NodeName>
+            <NodeName>enb</NodeName>
             <EnbDetails>
-                <NetworkProfile>TDe5-eNB1and2-_w_OAM</NetworkProfile>
+                <NetworkProfile>profile</NetworkProfile>
             </EnbDetails>
          </EnbConfigSet>
     </soap:Body>
