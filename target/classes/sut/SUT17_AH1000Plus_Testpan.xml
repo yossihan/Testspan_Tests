@@ -63,7 +63,7 @@
 				<readCommunity>public</readCommunity>
 				<writeCommunity>private</writeCommunity>
 				<snmpVersion>V2</snmpVersion>
-				<strAddress>fd02:20:20:62::42</strAddress>
+				<strAddress>192.17.5.254</strAddress>
 			</snmp>
 			</ue5>
 		<ue6>
@@ -80,7 +80,7 @@
 				<readCommunity>public</readCommunity>
 				<writeCommunity>private</writeCommunity>
 				<snmpVersion>V2</snmpVersion>
-				<strAddress>fd02:20:20:62::42</strAddress>
+				<strAddress>192.17.6.254</strAddress>
 			</snmp>
 		</ue6>
 		
@@ -99,7 +99,7 @@
 				<readCommunity>public</readCommunity>
 				<writeCommunity>private</writeCommunity>
 				<snmpVersion>V2</snmpVersion>
-				<strAddress>fd02:20:20:62::42</strAddress>
+				<strAddress>192.17.3.254</strAddress>
 			</snmp>
 		</ue3>
 		
@@ -117,7 +117,7 @@
 				<readCommunity>public</readCommunity>
 				<writeCommunity>private</writeCommunity>
 				<snmpVersion>V2</snmpVersion>
-				<strAddress>fd02:20:20:62::42</strAddress>
+				<strAddress>192.17.4.254</strAddress>
 			</snmp>
 		</ue4>
 		
