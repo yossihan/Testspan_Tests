@@ -36,7 +36,7 @@
 		<lanIpAddress>198.15.2.254</lanIpAddress>
 		<imsi>200010001008289</imsi>
 		<iperfDlIpAddress>91.96.2.240</iperfDlIpAddress>
-        <iperfUlIpAddress>198.15.2.240</iperfUlIpAddress>
+        	<iperfUlIpAddress>198.15.2.240</iperfUlIpAddress>
 		<powerControllerMapping>powerControl/A6</powerControllerMapping>
 		<connectedToEnb>enb_1</connectedToEnb>
 		<ueCategory>12</ueCategory>
