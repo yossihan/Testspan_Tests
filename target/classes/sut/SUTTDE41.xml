@@ -43,10 +43,10 @@
 
 		<snmp>
 			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
-			<readCommunity>h=KUK4dJ</readCommunity>
-			<writeCommunity>BcqRz?3Z</writeCommunity>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
 			<snmpVersion>V2</snmpVersion>
-			<strAddress>20.19.82.35</strAddress>
+			<strAddress>198.15.2.254</strAddress>
 		</snmp>
 	</dyn1>
 
