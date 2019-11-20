@@ -5,7 +5,7 @@
 	<SingleDUT>enb_1</SingleDUT>
     <SecondSingleDUT>enb_2</SecondSingleDUT>
 	<fourSingleDUT>enb_4</fourSingleDUT>
-	<UEs>dyn1,dyn5</UEs>
+	<UEs>dyn1;dyn5</UEs>
 	<NetspanVersion>17.00</NetspanVersion>
 	
 	
