@@ -8,7 +8,7 @@
     </soap:Header>
     <soap:Body>
         <SoftwareImageUpdate xmlns="http://Airspan.Netspan.WebServices">
-            <Name>SWIT17-Harmony42</Name>
+            <Name>HW_Name</Name>
             <SoftwareImage>
                 <HardwareCategory>AirHarmony</HardwareCategory>
                 <SoftwareFileInfo>
