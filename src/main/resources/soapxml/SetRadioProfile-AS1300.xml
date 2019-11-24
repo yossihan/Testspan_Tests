@@ -10,14 +10,14 @@
         <EnbConfigSet xmlns="http://Airspan.Netspan.WebServices">
             <NodeName>TDE4-AT1300-160</NodeName>
             <EnbDetails>
-			<MultiCellProfile>AirStrend1300 LB</MultiCellProfile>
+			<MultiCellProfile>AirStrend1300 Default Disabled</MultiCellProfile>
                 <LteCell>
                     <CellNumber>1</CellNumber>
                     <RadioProfile>AT1300-39750-MC20</RadioProfile>
                 </LteCell>
                 <LteCell>
                     <CellNumber>2</CellNumber>
-                    <RadioProfile>AT1300-39750-MC10</RadioProfile>
+                    <RadioProfile>AT1300-41490-MC10</RadioProfile>
                 </LteCell>
             </EnbDetails>
         </EnbConfigSet>
