@@ -10,7 +10,7 @@
         <EnbConfigSet xmlns="http://Airspan.Netspan.WebServices">
             <NodeName>enb</NodeName>
             <EnbDetails>
-                <NetworkProfile>profile</NetworkProfile>
+                <SyncProfile>profile</SyncProfile>
             </EnbDetails>
          </EnbConfigSet>
     </soap:Body>

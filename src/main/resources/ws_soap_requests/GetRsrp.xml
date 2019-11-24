@@ -7,11 +7,8 @@
         </Credentials>
     </soap:Header>
     <soap:Body>
-        <EnbConfigSet xmlns="http://Airspan.Netspan.WebServices">
-            <NodeName>enb</NodeName>
-            <EnbDetails>
-                <NetworkProfile>profile</NetworkProfile>
-            </EnbDetails>
-         </EnbConfigSet>
+        <LocationAndSyncStatusGet xmlns="http://Airspan.Netspan.WebServices">
+            <NodeNameOrId>TDE5-eNB1</NodeNameOrId>
+        </LocationAndSyncStatusGet>
     </soap:Body>
 </soap:Envelope>
