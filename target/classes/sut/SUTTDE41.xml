@@ -1,99 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sut validators="">
-	<NetspanWS>
-		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
-		<hostname>192.168.57.153</hostname>
-	</NetspanWS>
-
-	<!-- AirStrand1300 -->
-	<enb_1>
-		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirStrand1300</class>
-		<netspanName>TDE4-AT1300-160</netspanName>
-		<band>B41LH</band>
-		<duplexMode>TDD</duplexMode>
-		
-		<snmp>
-			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
-			<readCommunity>h=KUK4dJ</readCommunity>
-			<writeCommunity>BcqRz?3Z</writeCommunity>
-			<snmpVersion>V2</snmpVersion>
-			<strAddress>20.19.82.35</strAddress>
-		</snmp>
-		<xlp>
-			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
-			<ipAddress>20.19.82.35</ipAddress>
-			<serialCom>
-				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
-				<comName>192.168.58.67</comName>
-				<port>4001</port>
-			</serialCom>
-		</xlp>
-	</enb_1>
-
-	<dyn1>
-		<class>com.airspan.testspan.jsystem.sysobjs.ue.ZemtelUe</class>
-		<wanIpAddress>44.44.4.1</wanIpAddress>
-		<lanIpAddress>198.15.2.254</lanIpAddress>
-		<imsi>200010001008289</imsi>
-		<iperfDlIpAddress>91.96.2.240</iperfDlIpAddress>
-        	<iperfUlIpAddress>198.15.2.240</iperfUlIpAddress>
-		<powerControllerMapping>powerControl/A6</powerControllerMapping>
-		<connectedToEnb>enb_1</connectedToEnb>
-		<ueCategory>12</ueCategory>
-
-		<snmp>
-			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
-			<readCommunity>public</readCommunity>
-			<writeCommunity>private</writeCommunity>
-			<snmpVersion>V2</snmpVersion>
-			<strAddress>198.15.2.254</strAddress>
-		</snmp>
-	</dyn1>
-
-	<EPC>
-		<class>com.airspan.testspan.jsystem.sysobjs.epc.CiscoEpc</class>
-		<ipAddress>192.168.61.117</ipAddress>
-		<username>admin</username>
-		<password>SWITcis!</password>
-	</EPC>
-
-
-	<amarisoft_1>
-		<class>com.airspan.testspan.jsystem.sysobjs.amarisoft.UeSimulatorServer</class>
-		<userName>root</userName>
-		<password>SWITswit</password>
-		<ipAddress>192.168.58.110</ipAddress>
-		<port>22</port>
-	</amarisoft_1>
-	
-	
-	
-	
-	<ue_lists>
-        <class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
-        <ueList index="0">
-            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
-            <description>enb_1.ptp</description>
-            <ues>dyn1</ues>
-        </ueList>
-  
-    </ue_lists>
-	
-
-    <iperf_server_1>
-        <class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
-        <userName>swit</userName>
-        <password>swit_user1</password>
-        <ipAddress>192.168.59.11</ipAddress>
-    </iperf_server_1>
-	
-	<iperf_server_2>
-        <class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
-        <userName>tde4</userName>
-        <password>tde4</password>
-        <ipAddress>192.168.59.49</ipAddress>
-    </iperf_server_2>
-
-
-	
+   <NetspanWS>
+      <class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
+      <hostname>192.168.57.153</hostname>
+   </NetspanWS>
+   <!-- AirStrand1300 -->
+   <enb_1>
+      <class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirStrand1300</class>
+      <netspanName>TDE4-AT1300-160</netspanName>
+      <band>B41LH</band>
+      <duplexMode>TDD</duplexMode>
+      <snmp>
+         <class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+         <readCommunity>h=KUK4dJ</readCommunity>
+         <writeCommunity>BcqRz?3Z</writeCommunity>
+         <snmpVersion>V2</snmpVersion>
+         <strAddress>20.19.82.35</strAddress>
+      </snmp>
+      <xlp>
+         <class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+         <ipAddress>20.19.82.35</ipAddress>
+         <serialCom>
+            <class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+            <comName>192.168.58.67</comName>
+            <port>4001</port>
+         </serialCom>
+      </xlp>
+   </enb_1>
+   <dyn1>
+      <class>com.airspan.testspan.jsystem.sysobjs.ue.ZemtelUe</class>
+      <wanIpAddress>44.44.4.1</wanIpAddress>
+      <lanIpAddress>198.15.2.254</lanIpAddress>
+      <imsi>200010001008289</imsi>
+      <iperfDlIpAddress>91.96.2.240</iperfDlIpAddress>
+      <iperfUlIpAddress>198.15.2.240</iperfUlIpAddress>
+      <powerControllerMapping>powerControl/A6</powerControllerMapping>
+      <connectedToEnb>enb_1</connectedToEnb>
+      <ueCategory>12</ueCategory>
+      <snmp>
+         <class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+         <readCommunity>public</readCommunity>
+         <writeCommunity>private</writeCommunity>
+         <snmpVersion>V2</snmpVersion>
+         <strAddress>198.15.2.254</strAddress>
+      </snmp>
+   </dyn1>
+   <EPC>
+      <class>com.airspan.testspan.jsystem.sysobjs.epc.CiscoEpc</class>
+      <ipAddress>192.168.61.117</ipAddress>
+      <username>admin</username>
+      <password>SWITcis!</password>
+   </EPC>
+   <amarisoft_1>
+      <class>com.airspan.testspan.jsystem.sysobjs.amarisoft.UeSimulatorServer</class>
+      <userName>root</userName>
+      <password>SWITswit</password>
+      <ipAddress>192.168.58.110</ipAddress>
+      <port>22</port>
+   </amarisoft_1>
+   <ue_lists>
+      <class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
+      <ueList index="0">
+         <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+         <description>enb_1.ptp</description>
+         <ues>dyn1</ues>
+      </ueList>
+   </ue_lists>
+   <iperf_server_1>
+      <class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+      <userName>swit</userName>
+      <password>swit_user1</password>
+      <ipAddress>192.168.59.11</ipAddress>
+   </iperf_server_1>
+   <iperf_server_2>
+      <class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+      <userName>tde4</userName>
+      <password>tde4</password>
+      <ipAddress>192.168.59.49</ipAddress>
+   </iperf_server_2>
 </sut>
