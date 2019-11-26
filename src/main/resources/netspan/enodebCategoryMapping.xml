@@ -8,6 +8,7 @@
 
     <hardwareCategory type="AirHarmony">
         <hardware>AirHarmony</hardware>
+	<hardware>AirHarmony 1000</hardware>
     </hardwareCategory>
 
     <hardwareCategory type="AirVelocity">
