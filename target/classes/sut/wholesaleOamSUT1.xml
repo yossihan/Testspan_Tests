@@ -26,7 +26,7 @@
 		<band>B42LH</band>
 		<duplexMode>TDD</duplexMode>
 		<Network_Profile>TDe5-eNB1and2-_w_OAM</Network_Profile>
-		<Synchronization_Profile>SR15.2v1 AirSpeed GPS And NL TDE55</Synchronization_Profile>
+		<Synchronization_Profile>SR15.2v1 AirSpeed  NL TDE5 NLTest</Synchronization_Profile>
 		<cell_1>
             <Cell_Adv_Profile>SR15.2 AirSpeed Defaults_64QAM_Disabled-I:128</Cell_Adv_Profile>
             <Radio_Profile>TDE5_eNB1S2-I:129</Radio_Profile>
