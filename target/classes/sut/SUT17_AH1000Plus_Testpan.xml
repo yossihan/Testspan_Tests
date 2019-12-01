@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><sut validators="">
 
-	<SW_Path>123</SW_Path>
+<HW_Family>XLP</HW_Family>
+<SW_Under>123</SW_Under>
+<SW_Dots>123</SW_Dots>
+<HW_Name>123</HW_Name>
+<!--<HW_Type>AirHarmony</HW_Type>
+-->
+	<!-- <SW_Path>123</SW_Path>
 	<SW_Image>123</SW_Image>
-	
+	 -->
 	<NetspanWS>
 		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
 		<hostname>192.168.58.103</hostname>
@@ -14,6 +20,7 @@
 		<netspanName>SWIT17-Harmony42</netspanName>
 		<band>B40H</band>
 		<duplexMode>TDD</duplexMode>
+		<HW_Type>AirHarmony</HW_Type>
 		<cell_1>
             <Cell_Adv_Profile>SR15.0 AirHarmony Defaults</Cell_Adv_Profile>
             <Radio_Profile>SWIT17_Harmony42_2.39 GHz_B40_20MHz_FC2_10dBm</Radio_Profile>
