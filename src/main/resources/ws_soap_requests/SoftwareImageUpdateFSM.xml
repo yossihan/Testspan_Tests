@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <Credentials xmlns="http://Airspan.Netspan.WebServices">
+            <Username>wsadmin</Username>
+            <Password>password</Password>
+        </Credentials>
+    </soap:Header>
+    <soap:Body>
+        <SoftwareImageUpdate xmlns="http://Airspan.Netspan.WebServices">
+            <Name>HW_Name</Name>
+            <SoftwareImage>
+                <HardwareCategory>HW_Type</HardwareCategory>
+                <SoftwareFileInfo>
+                    <ImageType>LTE</ImageType>
+                    <FileNameWithPath>/upload/fsm.15_SW_Under.enc2</FileNameWithPath>
+                    <Version>15.SW_Dots</Version>
+                </SoftwareFileInfo>
+            </SoftwareImage>
+        </SoftwareImageUpdate>
+    </soap:Body>
+</soap:Envelope>
