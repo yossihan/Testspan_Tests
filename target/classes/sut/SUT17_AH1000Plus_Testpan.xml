@@ -4,8 +4,13 @@
 <SW_Under>123</SW_Under>
 <SW_Dots>123</SW_Dots>
 <HW_Name>123</HW_Name>
-<!--<HW_Type>AirHarmony</HW_Type>
--->
+<HW_Type>AirHarmony</HW_Type>
+
+<ues>
+	<type>
+	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
+	</type>
+</ues>
 	<!-- <SW_Path>123</SW_Path>
 	<SW_Image>123</SW_Image>
 	 -->
@@ -20,8 +25,7 @@
 		<netspanName>SWIT17-Harmony42</netspanName>
 		<band>B40H</band>
 		<duplexMode>TDD</duplexMode>
-		<HW_Type>AirHarmony</HW_Type>
-		<cell_1>
+			<cell_1>
             <Cell_Adv_Profile>SR15.0 AirHarmony Defaults</Cell_Adv_Profile>
             <Radio_Profile>SWIT17_Harmony42_2.39 GHz_B40_20MHz_FC2_10dBm</Radio_Profile>
             <Mobility_Profile>SR15.0v2 AirHarmony-I:1727</Mobility_Profile>
