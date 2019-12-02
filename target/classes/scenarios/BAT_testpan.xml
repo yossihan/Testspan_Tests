@@ -15,26 +15,36 @@
     <taskdef classname="com.aqua.anttask.jsystem.JSystemSetAntProperties" name="jsystemsetantproperties"/>
     <target name="execute scenario">
         <antcallback target="t0"/>
-        <antcallback target="t1"/>
-        <antcallback target="t2"/>
+        <echo message="Check condition &quot;${TestResultToReturn}&quot; EQUALS &quot;PASS&quot;"/>
+        <if>
+            <!--#Jsystem#-->
+            <jsystemscriptcondition fullUuid="${jsystem.parent.uuid}.${jsystem.uuid}.adfe2741-5bf5-4531-993a-be505f2c0fe7" language="javascript" params="str &lt;SEP&gt; ${TestResultToReturn} &lt;SEP&gt; EQUALS &lt;SEP&gt; PASS &lt;SEP&gt; false" parentName="${jsystem.parent.name}.${ant.project.name}" src="ifScriptCondition.js" value="false"/>
+            <then>
+                <antcallback target="t1"/>
+                <antcallback target="t2"/>
+            </then>
+            <else>
+                <!--#Jsystem#-->
+            </else>
+        </if>
     </target>
     <target name="t0">
-        <jsystem-ant antfile="${scenarios.base}/scenarios/SWUpgrade.xml">
-            <property name="jsystem.uuid" value="b87c9b4f-7c8a-4b44-ba18-5084f6499d34"/>
+        <jsystem-ant antfile="${scenarios.base}/scenarios/SWUpgrade_Dor.xml">
+            <property name="jsystem.uuid" value="ebe00f44-74ae-4720-8151-7c60bd8bd34e"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
     <target name="t1">
         <jsystem-ant antfile="${scenarios.base}/scenarios/Cold_Reboot_PNP.xml">
-            <property name="jsystem.uuid" value="247d4529-7a84-42ba-b479-1b987033ed14"/>
+            <property name="jsystem.uuid" value="e77b036b-1756-43ff-8b56-dcd54b682074"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
     <target name="t2">
         <jsystem-ant antfile="${scenarios.base}/scenarios/TPT_Iperf_test.xml">
-            <property name="jsystem.uuid" value="72efbed5-71b2-4faa-833e-c890c75576fa"/>
+            <property name="jsystem.uuid" value="71c22b3e-286e-4964-85c0-037326ba77ab"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
