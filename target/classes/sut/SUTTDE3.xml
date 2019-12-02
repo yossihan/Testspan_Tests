@@ -47,20 +47,20 @@
         <xlp>
             <class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
             <ipAddress>fd06:20:21:82::3</ipAddress>
-                <serialCom>
-                    <class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
-                    <comName>192.168.58.187</comName>
-                    <port>4001</port>
-                </serialCom>
+            <serialCom>
+                <class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+                <comName>192.168.58.187</comName>
+                <port>4001</port>
+            </serialCom>
         </xlp>
-        <!--<dans index="0"> 
+        <dans index="0"> 
             <class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Dan</class>
-				<serialCom>
-					<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
-					<comName>192.168.58.187</comName>
-					<port>4002</port>
-				</serialCom>
-        </dans>-->
+			<serialCom>
+				<!--<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.187</comName>
+				<port>4002</port>-->
+			</serialCom>
+        </dans>
     </enb_2>
 
 	<EPC>
