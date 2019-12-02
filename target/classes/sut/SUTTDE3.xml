@@ -19,26 +19,22 @@
 		<Gemtek>pmpDevCpeEarfcnAndFrequencySettingEarfcnAndFrequency</Gemtek>
 		<S1>Automation_AU_Neighbour_Tel_Aviv_SR16.00_S1</S1>
 		<X2>Automation_AU_Neighbour_Tel_Aviv_SR16.00_X2</X2>
-
 		<MCProfile_CA_ON>AirUnity Default Disabled_Avalanche_CA</MCProfile_CA_ON>
 		<MCProfile_CA_OFF>AirUnity Default Disabled</MCProfile_CA_OFF>
 		<X2_ANR_ON>Avalanche_PnpEnable</X2_ANR_ON>
 		<X2_ANR_OFF>Avalanche_PnpEnable_NOANR</X2_ANR_OFF>
 		<Radio_Cell1>Auto_AU_Radio_41490_25_SR16.00</Radio_Cell1>
-		<!-- New Profiles Defenition for ResetToDefault scenario - from 27-1-2019 -->
-                                                     <!-- eNB Profiles -->
-                <!--<System_Profile>Automation_SR16.5v12 AirUnity system defaults</System_Profile>
-                <eNB_Adv_Profile>Automation_AU_Advanced_AirportCity_SR16.00</eNB_Adv_Profile>
-                <Sync_Profile>Automation_AU_Sync_SR16.00_Ava</Sync_Profile>
-                <Security_Profile>Automation_AU_Security_SR16.00</Security_Profile>
-                <Net_Profile>Automation_AU_Network_Fairfax_SR16.50_Ava</Net_Profile>                         
-                <Mng_Profile>Automation_AU_Management_SR16.00</Mng_Profile>
-                <Ngh_Profile>Automation_AU_Neighbour_Tel_Aviv_SR16.00_X2</Ngh_Profile>
-                <Son_Profile>Automation_AU_SON_AirportCity_SR16.00_Ava</Son_Profile>
-                <MC_Profile>Automation_AirUnity Default Disabled</MC_Profile>
-                                
-                                                     <!-- CELL1 Profiles -->
-        <!--cell_1>              
+        <System_Profile>Automation_SR16.5v12 AirUnity system defaults</System_Profile>
+        <eNB_Adv_Profile>Automation_AU_Advanced_AirportCity_SR16.00</eNB_Adv_Profile>
+        <Sync_Profile>Automation_AU_Sync_SR16.00_Ava</Sync_Profile>
+        <Security_Profile>Automation_AU_Security_SR16.00</Security_Profile>
+        <Net_Profile>Automation_AU_Network_Fairfax_SR16.50_Ava</Net_Profile>                         
+        <Mng_Profile>Automation_AU_Management_SR16.00</Mng_Profile>
+        <Ngh_Profile>Automation_AU_Neighbour_Tel_Aviv_SR16.00_X2</Ngh_Profile>
+        <Son_Profile>Automation_AU_SON_AirportCity_SR16.00_Ava</Son_Profile>
+        <MC_Profile>Automation_AirUnity Default Disabled</MC_Profile>
+
+        <cell_1>              
                 <Cell_Adv_Profile>Automation_AU_Cell_Advanced_AirportCity</Cell_Adv_Profile>
 				<Cell_Adv_Profile_ANR>AU_Cell_Advanced_Tel_Aviv_NGHRemTH=15</Cell_Adv_Profile_ANR>
                 <Embms_Profile>Automation_AU_eMBMS_SR16.00</Embms_Profile>
@@ -93,29 +89,24 @@
         <inter20>41200</inter20>
         <inter15>41470</inter15>
         <intra15>41320</intra15>
+        <S1>Automation_SR17.0v10_v2.0_GPL_Moon_S1</S1>
+        <X2>Automation_SR17.0v10_v2.0_GPL_Moon_X2</X2>
+        <X2_ANR_ON>Automation_SR15.50v6_3_GPL_Moon_ANR_ON</X2_ANR_ON>
+        <X2_ANR_OFF>Automation_SR15.50v6_3_GPL_Moon_ANR_OFF</X2_ANR_OFF>
+        <MCProfile_CA_ON>Automation_SR15.50v6_3_GPL_Moon</MCProfile_CA_ON>
+        <MCProfile_CA_OFF>Automation_SR15.50v6_3_GPL_Moon_CA_OFF</MCProfile_CA_OFF>
+        <Cell_Adv_Profile_ANR>Automation_SR17.0v10_v2.0_GPL_NghRemTh=15</Cell_Adv_Profile_ANR>
 
-            <S1>Automation_SR17.0v10_v2.0_GPL_Moon_S1</S1>
-            <X2>Automation_SR17.0v10_v2.0_GPL_Moon_X2</X2>
-            <X2_ANR_ON>Automation_SR15.50v6_3_GPL_Moon_ANR_ON</X2_ANR_ON>
-            <X2_ANR_OFF>Automation_SR15.50v6_3_GPL_Moon_ANR_OFF</X2_ANR_OFF>
-            <MCProfile_CA_ON>Automation_SR15.50v6_3_GPL_Moon</MCProfile_CA_ON>
-            <MCProfile_CA_OFF>Automation_SR15.50v6_3_GPL_Moon_CA_OFF</MCProfile_CA_OFF>
-            <Cell_Adv_Profile_ANR>Automation_SR17.0v10_v2.0_GPL_NghRemTh=15</Cell_Adv_Profile_ANR>
+            <System_Profile>Automation_SR15.5v16_Moon</System_Profile>
+            <eNB_Adv_Profile>Automation_SR15.50v6_3_GPL_Moon</eNB_Adv_Profile>
+            <Sync_Profile>Automation_SR15.50v6_3_GPL_Moon</Sync_Profile>
+            <Security_Profile>Automation_SR15.50v6_3_GPL_Moon</Security_Profile>
+            <Net_Profile>Automation_SR17.0v10_v2.0_GPL_Moon</Net_Profile>                    
+            <Mng_Profile>Automation_SR15.50v6_3_GPL_Moon</Mng_Profile>
+            <Son_Profile>Automation_SR15.50v6_3_GPL_Moon</Son_Profile>
+            <MC_Profile>Automation_SR15.50v6_3_GPL_Moon</MC_Profile>
 
-            <!-- New Profiles Defenition for ResetToDefault scenario - from 27-1-2019 -->
-            <!-- eNB Profiles -->
-                <!--<System_Profile>Automation_SR15.5v16_Moon</System_Profile>
-                <eNB_Adv_Profile>Automation_SR15.50v6_3_GPL_Moon</eNB_Adv_Profile>
-                <Sync_Profile>Automation_SR15.50v6_3_GPL_Moon</Sync_Profile>
-                <Security_Profile>Automation_SR15.50v6_3_GPL_Moon</Security_Profile>
-                <Net_Profile>Automation_SR17.0v10_v2.0_GPL_Moon</Net_Profile>                    
-                <Mng_Profile>Automation_SR15.50v6_3_GPL_Moon</Mng_Profile>
-                <Ngh_Profile>Automation_SR17.0v10_v2.0_GPL_Moon_X2</Ngh_Profile>
-                <Son_Profile>Automation_SR15.50v6_3_GPL_Moon</Son_Profile>
-                <MC_Profile>Automation_SR15.50v6_3_GPL_Moon</MC_Profile>
-
-                    <!-- CELL1 Profiles -->
-		<!--<cell_1>               
+		<cell_1>               
 			<Cell_Adv_Profile>Automation_SR17.0v10_v2.0_GPL</Cell_Adv_Profile>
 			<Embms_Profile>Automation_SR15.50v6_3_GPL_Moon</Embms_Profile>
 			<Traffic_Mng>Automation_SR15.50v6_3_GPL_Moon</Traffic_Mng>
@@ -124,8 +115,8 @@
 			<Radio_Profile>Auto_FC2_BW20_41200_Moon_4K_Cell1</Radio_Profile>
 			<Tac>11000</Tac>                          
 		</cell_1>
-                                <!-- CELL2 Profiles -->
-        <!--<cell_2>               
+
+        <cell_2>               
             <Cell_Adv_Profile>Automation_SR17.0v10_v2.0_GPL</Cell_Adv_Profile>
             <Embms_Profile>Automation_SR15.50v6_3_GPL_Moon</Embms_Profile>
             <Traffic_Mng>Automation_SR15.50v6_3_GPL_Moon</Traffic_Mng>
@@ -153,7 +144,7 @@
                     <class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
                     <comName>192.168.58.187</comName>
                     <port>4001</port>
-                    </serialCom>
+                </serialCom>
         </xlp>
             <dans index="0"> 
             <class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Dan</class>
@@ -190,7 +181,7 @@
 		<class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
 		<ueList index="0">
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
-			<description>enb_1.ptp</description>
+			<description>ue1.ptp</description>
 			<ues>ue1</ues>
 		</ueList>
 	</ue_lists>
