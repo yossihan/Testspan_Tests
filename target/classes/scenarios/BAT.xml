@@ -43,8 +43,8 @@
         </jsystem-ant>
     </target>
     <target name="t2">
-        <jsystem-ant antfile="${scenarios.base}/scenarios/TPT_Iperf_test.xml">
-            <property name="jsystem.uuid" value="71c22b3e-286e-4964-85c0-037326ba77ab"/>
+        <jsystem-ant antfile="${scenarios.base}/scenarios/TPT_PtMP_1024_Udp_Qci9.xml">
+            <property name="jsystem.uuid" value="15cbfd13-130a-4b2d-9654-aa6a2170907a"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
