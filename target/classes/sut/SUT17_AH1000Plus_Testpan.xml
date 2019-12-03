@@ -137,7 +137,7 @@
         <ueList index="0">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.ptp</description>
-            <ues>ue4</ues>
+            <ues>ue5</ues>
         </ueList>
 		<ueList index="2">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
