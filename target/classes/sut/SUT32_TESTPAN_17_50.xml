@@ -181,8 +181,8 @@
 			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
 			<readCommunity>public</readCommunity>
 			<writeCommunity>private</writeCommunity>
-			<snmpVersion>V1</snmpVersion>
-			<strAddress>20.20.2.130</strAddress>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.32.1.254</strAddress>
 		</snmp>
 
 	</static1>
