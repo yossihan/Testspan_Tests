@@ -5,9 +5,14 @@
 	<SingleDUT>enb_1</SingleDUT>
     <SecondSingleDUT>enb_2</SecondSingleDUT>
 	<Donor>enb_4</Donor>
-	<UEs>static1,static3,static5,static6,dyn7,dyn8,dyn9</UEs>
 	<NetspanVersion>17.00</NetspanVersion>
 	<Mss>1290</Mss>
+	
+	<ues>
+	<type>
+	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
+	</type>
+	</ues>
 	
 	
 	
