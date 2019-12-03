@@ -2,17 +2,24 @@
 <sut validators="">
 
 
+<HW_Family>XLP</HW_Family>
+<SW_Under>123</SW_Under>
+<SW_Dots>123</SW_Dots>
+<HW_Name>123</HW_Name>
+<HW_Type>AirHarmony</HW_Type>
+
 	<SingleDUT>enb_1</SingleDUT>
     <SecondSingleDUT>enb_2</SecondSingleDUT>
 	<Donor>enb_4</Donor>
 	<NetspanVersion>17.00</NetspanVersion>
 	<Mss>1290</Mss>
 	
-	<ues>
-	<type>
+	<ues>static1;static3</ues>
+	
+	<ues_type>
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
-	</type>
-	</ues>
+	</ues_type>
+	
 	
 	
 	
@@ -207,8 +214,8 @@
 			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
 			<readCommunity>public</readCommunity>
 			<writeCommunity>private</writeCommunity>
-			<snmpVersion>V1</snmpVersion>
-			<strAddress>20.20.2.130</strAddress>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.32.3.254</strAddress>
 		</snmp>
 
 	</static3>
