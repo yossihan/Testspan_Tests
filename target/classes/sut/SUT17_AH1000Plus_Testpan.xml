@@ -6,11 +6,12 @@
 <HW_Name>123</HW_Name>
 <HW_Type>AirHarmony</HW_Type>
 
-<ues>
-	<type>
+<ues_type>
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
-	</type>
-</ues>
+</ues_type>
+
+<ues>ue4;ue5;ue6</ues>
+
 	<!-- <SW_Path>123</SW_Path>
 	<SW_Image>123</SW_Image>
 	 -->
