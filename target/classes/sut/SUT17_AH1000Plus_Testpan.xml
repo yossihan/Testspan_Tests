@@ -5,6 +5,7 @@
 <SW_Dots>123</SW_Dots>
 <HW_Name>123</HW_Name>
 <HW_Type>AirHarmony</HW_Type>
+<Mss>1460</Mss>
 
 <ues_type>
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
