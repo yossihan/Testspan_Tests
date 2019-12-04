@@ -68,7 +68,7 @@
 		<class>com.airspan.testspan.jsystem.sysobjs.epc.CiscoEpc</class>
 		<ipAddress>192.168.59.113</ipAddress>
 		<username>admin</username>
-		<password>SWITcis!</password>
+		<password>SWIT!cis</password>
 	</EPC>
 
 	<iperf_server_1>
