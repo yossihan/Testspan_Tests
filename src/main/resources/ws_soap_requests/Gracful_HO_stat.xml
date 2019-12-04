@@ -7,10 +7,10 @@
         </Credentials>
     </soap:Header>
     <soap:Body>
-        <HandoverPerTargetCellRawGet xmlns="http://Airspan.Netspan.WebServices">
+        <IncomingHandoverRawGet xmlns="http://Airspan.Netspan.WebServices">
             <NodeName>AH4K-TDE3</NodeName>
-            <DateStart>2019-12-03T17:23:35.636+02:00</DateStart>
-            <DateEnd>2019-12-03T17:43:34.484+02:00</DateEnd>
-        </HandoverPerTargetCellRawGet>
+            <DateStart>2019-12-03T19:02:20.050+02:00</DateStart>
+            <DateEnd>2019-12-03T19:10:00.000+02:00</DateEnd>
+        </IncomingHandoverRawGet>
     </soap:Body>
 </soap:Envelope>
