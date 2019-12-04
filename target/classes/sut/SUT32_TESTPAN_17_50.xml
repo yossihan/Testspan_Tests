@@ -20,9 +20,6 @@
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
 	</ues_type>
 	
-	
-	
-	
 	 
 	<NetspanWS>
 		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
@@ -434,7 +431,11 @@
             <description>enb_2.ptp</description>
             <ues>static3</ues>
         </ueList>
-        
+		<ueList index="3">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.pt3p</description>
+            <ues>static1,static3</ues>
+        </ueList>
     </ue_lists>
 
     <iperf_server_1>
@@ -460,6 +461,9 @@
 				<ipAddress>100.100.0.34</ipAddress>
 	            <operationSystemName>Linux</operationSystemName>
 	</pingServer1>
+	
+	
+	
 	
 	<pingServer2>
 	            <class>com.airspan.testspan.jsystem.sysobjs.station.WorkStation</class>
