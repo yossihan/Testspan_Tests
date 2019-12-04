@@ -28,7 +28,7 @@
                 <antcallback return="TestResultToReturn, StringToReturn" target="t6"/>
                 <antcallback return="TestResultToReturn" target="t7"/>
                 <antcallback target="t8"/>
-                <antcallback target="t9"/>
+                <antcallback return="TestResultToReturn" target="t9"/>
                 <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t10"/>
             </then>
             <else>
