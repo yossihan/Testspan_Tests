@@ -57,7 +57,8 @@
         <hardware>AirSpeed 1050</hardware>
         <hardware>AirStrand 1000T</hardware>
         <hardware>AirStrand 1300</hardware>
-		<hardware>AirSpeed 1250 Wired</hardware>
+	<hardware>AirSpeed 1250 Wired</hardware>
+	<hardware>AirSpeed 1035</hardware>	    
     </hardwareCategory>
 
     <hardwareCategory type="AirSpeed-Relay">
