@@ -7,6 +7,9 @@
 <SW_Dots>123</SW_Dots>
 <HW_Name>123</HW_Name>
 <HW_Type>AirHarmony</HW_Type>
+<Mss>1460</Mss>
+
+
 
 	<SingleDUT>enb_1</SingleDUT>
     <SecondSingleDUT>enb_2</SecondSingleDUT>
@@ -15,6 +18,8 @@
 	<Mss>1290</Mss>
 	
 	<ues>static1;static3</ues>
+	<dyns>dyn7;dyn8</dyns>
+	
 	
 	<ues_type>
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
@@ -284,8 +289,8 @@
 			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
 			<readCommunity>public</readCommunity>
 			<writeCommunity>private</writeCommunity>
-			<snmpVersion>V1</snmpVersion>
-			<strAddress>20.20.2.130</strAddress>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.32.7.254</strAddress>
 		</snmp>
 		
 	</dyn7>
@@ -308,8 +313,8 @@
 			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
 			<readCommunity>public</readCommunity>
 			<writeCommunity>private</writeCommunity>
-			<snmpVersion>V1</snmpVersion>
-			<strAddress>20.20.2.130</strAddress>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.32.8.254</strAddress>
 		</snmp>
 
 	</dyn8>
@@ -436,6 +441,12 @@
             <description>enb_1.pt3p</description>
             <ues>static1,static3</ues>
         </ueList>
+		<ueList index="4">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1_enb_2_HO.ptp</description>
+            <ues>dyn7,dyn8</ues>
+        </ueList>
+		
     </ue_lists>
 
     <iperf_server_1>
