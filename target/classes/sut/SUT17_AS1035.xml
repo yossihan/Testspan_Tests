@@ -21,7 +21,7 @@
 	
 	<!-- AirSpeed1035 -->
 	<enb_1>       
-		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirHarmony1000Plus</class> -
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirSpeed1035</class> -
 		<netspanName>SWIT17-AirSpeed40</netspanName>
 		<band>B40H</band>
 		<duplexMode>TDD</duplexMode>
