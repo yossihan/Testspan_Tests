@@ -23,7 +23,7 @@
 	<enb_1>       
 		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirSpeed1035</class>
 		<netspanName>SWIT17-AirSpeed40</netspanName>
-		<band>B40H</band>
+		
 		<duplexMode>TDD</duplexMode>
 			<cell_1>
             <Cell_Adv_Profile>SR15.2 AirSpeed Defaults</Cell_Adv_Profile>
@@ -43,6 +43,7 @@
 		</snmp>
 		<xlp>
 			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<band>B40H</band>
 			<ipAddress>fd02:20:20:62::40</ipAddress>
 			<serialCom>
 				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
