@@ -8,7 +8,7 @@
 <HW_Name>123</HW_Name>
 <HW_Type>AirHarmony</HW_Type>
 <Mss>1460</Mss>
-
+<opPassword17>PZ8Hfy3=Ve7fQkt*</opPassword17>
 
 
 	<SingleDUT>enb_1</SingleDUT>
@@ -418,6 +418,34 @@
       
     </rudat_set>
 	
+	
+	<HO_attenuator>
+		<class>com.airspan.testspan.jsystem.sysobjs.attenuator.AttenuatorSet</class>
+		<attenuators index="0">
+			<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+			<maxAttenuation>30</maxAttenuation>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<port>4004</port>
+				<comName>192.168.58.170</comName>
+			</serialCom>
+		</attenuators>
+		<attenuators index="1">
+			<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+			<maxAttenuation>30</maxAttenuation>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<port>4010</port>
+				<comName>192.168.58.170</comName>
+			</serialCom>
+		</attenuators>
+		<waitTime>1000</waitTime>
+		<stepTime>500</stepTime>
+		<attenuationStep>2</attenuationStep>
+		<maxAttenuation>30</maxAttenuation>
+		<minAttenuation>0</minAttenuation>
+	</HO_attenuator>
+<!--	http://asil-svg-testspan:8070/reports/exec_468/tests/test_1341575828128-15/test.html-->
 	
 
     <ue_lists>
