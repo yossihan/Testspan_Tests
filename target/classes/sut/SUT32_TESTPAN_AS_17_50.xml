@@ -8,18 +8,19 @@
 <HW_Name>123</HW_Name>
 <HW_Type>AirHarmony</HW_Type>
 <Mss>1460</Mss>
-
+<opPassword17>PZ8Hfy3=Ve7fQkt*</opPassword17>
 
 
 	<SingleDUT>enb_1</SingleDUT>
     <SecondSingleDUT>enb_2</SecondSingleDUT>
 	<Donor>enb_4</Donor>
-	<NetspanVersion>17.50</NetspanVersion>
+	<NetspanVersion>17.00</NetspanVersion>
 	<Mss>1290</Mss>
 	
 	<ues>static1;static3</ues>
 	<dyns>dyn7;dyn8</dyns>
-	
+	<unues>static1;static3;static5;static6;dyn9</unues>
+
 	
 	<ues_type>
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
@@ -27,11 +28,62 @@
 	
 	 
 	<NetspanWS>
-		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_50.NetspanWsImpl</class>
+		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
 		<hostname>192.168.58.34</hostname>
 	</NetspanWS>
 	
-	
+	 <!-- AH4200 TDD B42  -->
+	<enb_2>      
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirHarmony4200</class>
+		<netspanName>SWIT32-Harmony130</netspanName>
+		<band>B42LH</band>
+		<duplexMode>TDD</duplexMode>
+		<System_Profile>SR17.0v11 AirHarmony system defaults</System_Profile>
+		<eNB_Adv_Profile>SWIT32_Harmony_130</eNB_Adv_Profile>
+		<Network>SWIT32_Harmony_130</Network>
+		<Sync_Profile>SR15.0v2 AirHarmony GPS Only</Sync_Profile>
+		<Security_Profile>SR16.5 AirHarmony Ciphering Enabled</Security_Profile>		
+		<Mng_Profile>SR17.0 AirHarmony: 5 minutes</Mng_Profile>
+		<Son_Profile>SR14.2 AirHarmony ANR PCI RSI Enable</Son_Profile>
+		<NeighbourManagement>AirHarmony All PCI</NeighbourManagement>
+		<softwareImage>SWIT32-Harmony130</softwareImage>
+
+		<!-- CELL1 Profiles -->
+		<cell_1>	
+			<Cell_Adv_Profile>SR15.0 AirHarmony Defaults</Cell_Adv_Profile>
+			<Embms_Profile>SR14.5 AirHarmony Disabled</Embms_Profile>
+			<Traffic_Mng>SR15.5 AirHarmony Defaults</Traffic_Mng>
+			<Call_Trace>AirHarmony Call Trace Disabled</Call_Trace>
+			<Mobility_Profile>SR15.0v2 AirHarmony</Mobility_Profile>
+			<Radio_Profile>SWIT32-Harmony130 cell1</Radio_Profile>
+			<Tac>12594</Tac>		
+		</cell_1>
+		
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V1</snmpVersion>
+			<strAddress>20.20.2.130</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<ipAddress>20.20.2.130</ipAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.170</comName>
+				<port>4007</port>
+			</serialCom>
+		</xlp>
+		<dans index="0">
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Dan</class>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.170</comName>
+				<port>4008</port>
+			</serialCom>
+		</dans>
+	</enb_2>
 	
 	<!-- AirSpeed 1250 -->
 	<enb_1>
@@ -88,58 +140,7 @@
 	</enb_1>
 	
 	
-	 <!-- AH4200 TDD B42  -->
-	<enb_2>      
-		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirHarmony4200</class>
-		<netspanName>SWIT32-Harmony130</netspanName>
-		<band>B42LH</band>
-		<duplexMode>TDD</duplexMode>
-		<System_Profile>SR17.0v11 AirHarmony system defaults</System_Profile>
-		<eNB_Adv_Profile>SWIT32_Harmony_130</eNB_Adv_Profile>
-		<Network>SWIT32_Harmony_130</Network>
-		<Sync_Profile>SR15.0v2 AirHarmony GPS Only</Sync_Profile>
-		<Security_Profile>SR16.5 AirHarmony Ciphering Enabled</Security_Profile>		
-		<Mng_Profile>SR17.0 AirHarmony: 5 minutes</Mng_Profile>
-		<Son_Profile>SR14.2 AirHarmony ANR PCI RSI Enable</Son_Profile>
-		<NeighbourManagement>AirHarmony All PCI</NeighbourManagement>
-		<softwareImage>SWIT32-Harmony130</softwareImage>
-
-		<!-- CELL1 Profiles -->
-		<cell_1>	
-			<Cell_Adv_Profile>SR15.0 AirHarmony Defaults</Cell_Adv_Profile>
-			<Embms_Profile>SR14.5 AirHarmony Disabled</Embms_Profile>
-			<Traffic_Mng>SR15.5 AirHarmony Defaults</Traffic_Mng>
-			<Call_Trace>AirHarmony Call Trace Disabled</Call_Trace>
-			<Mobility_Profile>SR15.0v2 AirHarmony</Mobility_Profile>
-			<Radio_Profile>SWIT32-Harmony130 cell1</Radio_Profile>
-			<Tac>12594</Tac>		
-		</cell_1>
-		
-		<snmp>
-			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
-			<readCommunity>public</readCommunity>
-			<writeCommunity>private</writeCommunity>
-			<snmpVersion>V1</snmpVersion>
-			<strAddress>20.20.2.130</strAddress>
-		</snmp>
-		<xlp>
-			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
-			<ipAddress>20.20.2.130</ipAddress>
-			<serialCom>
-				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
-				<comName>192.168.58.170</comName>
-				<port>4007</port>
-			</serialCom>
-		</xlp>
-		<dans index="0">
-			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Dan</class>
-			<serialCom>
-				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
-				<comName>192.168.58.170</comName>
-				<port>4008</port>
-			</serialCom>
-		</dans>
-	</enb_2>
+	
 
 	
 	
@@ -233,15 +234,15 @@
         <iperfUlIpAddress>192.32.5.240</iperfUlIpAddress>
 		<imsi>200010001008835</imsi>
 		<powerControllerMapping>aviosys/A4</powerControllerMapping>
-		<connectedToEnb>enb_2</connectedToEnb>
+		<connectedToEnb>enb_1</connectedToEnb>
 		<ueCategory>4</ueCategory>
 		
 		<snmp>
 			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
-			<readCommunity>h=KUK4dJ</readCommunity>
-			<writeCommunity>BcqRz?3Z</writeCommunity>
-			<snmpVersion>V1</snmpVersion>
-			<strAddress>192.0.2.84</strAddress>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.32.5.254</strAddress>
 		</snmp>
 
 	</static5>
@@ -258,15 +259,15 @@
         <iperfUlIpAddress>192.32.7.240</iperfUlIpAddress>
 		<imsi>200010001008837</imsi>
 		<powerControllerMapping>aviosys/A4</powerControllerMapping>
-		<connectedToEnb>enb_2</connectedToEnb>
+		<connectedToEnb>enb_1</connectedToEnb>
 		<ueCategory>4</ueCategory>
 
 		<snmp>
 			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
-			<readCommunity>h=KUK4dJ</readCommunity>
-			<writeCommunity>BcqRz?3Z</writeCommunity>
-			<snmpVersion>V1</snmpVersion>
-			<strAddress>192.0.2.84</strAddress>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.32.6.254</strAddress>
 		</snmp>
 
 	</static6>
@@ -335,8 +336,8 @@
 			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
 			<readCommunity>public</readCommunity>
 			<writeCommunity>private</writeCommunity>
-			<snmpVersion>V1</snmpVersion>
-			<strAddress>20.20.2.130</strAddress>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.32.9.254</strAddress>
 		</snmp>
 
 	</dyn9>
@@ -418,32 +419,60 @@
     </rudat_set>
 	
 	
+	<HO_attenuator>
+		<class>com.airspan.testspan.jsystem.sysobjs.attenuator.AttenuatorSet</class>
+		<attenuators index="0">
+			<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+			<maxAttenuation>30</maxAttenuation>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<port>4004</port>
+				<comName>192.168.58.170</comName>
+			</serialCom>
+		</attenuators>
+		<attenuators index="1">
+			<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+			<maxAttenuation>30</maxAttenuation>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<port>4010</port>
+				<comName>192.168.58.170</comName>
+			</serialCom>
+		</attenuators>
+		<waitTime>1000</waitTime>
+		<stepTime>500</stepTime>
+		<attenuationStep>2</attenuationStep>
+		<maxAttenuation>30</maxAttenuation>
+		<minAttenuation>0</minAttenuation>
+	</HO_attenuator>
+<!--	http://asil-svg-testspan:8070/reports/exec_468/tests/test_1341575828128-15/test.html-->
+	
 
     <ue_lists>
         <class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
         <ueList index="0">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
-            <description>enb_2.ptp</description>
+            <description>enb_1.ptp</description>
             <ues>static1</ues>
         </ueList>
         <ueList index="1">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
-            <description>enb_2.pt2p</description>
+            <description>enb_1.pt2p</description>
             <ues>static1,static3</ues>
         </ueList>
         <ueList index="2">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
-            <description>enb_2.ptp</description>
+            <description>enb_1.ptp</description>
             <ues>static3</ues>
         </ueList>
 		<ueList index="3">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
-            <description>enb_2.pt3p</description>
+            <description>enb_1.pt3p</description>
             <ues>static1,static3</ues>
         </ueList>
 		<ueList index="4">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
-            <description>enb_2_enb_2_HO.ptp</description>
+            <description>enb_1_enb_2_HO.ptp</description>
             <ues>dyn7,dyn8</ues>
         </ueList>
 		
