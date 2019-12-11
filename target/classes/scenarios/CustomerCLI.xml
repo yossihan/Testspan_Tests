@@ -14,55 +14,37 @@
     <taskdef classname="com.aqua.anttask.jsystem.JSystemDataDrivenTask" name="jsystemdatadriven"/>
     <taskdef classname="com.aqua.anttask.jsystem.JSystemSetAntProperties" name="jsystemsetantproperties"/>
     <target name="execute scenario">
-        <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t0"/>
+        <antcallback target="t0"/>
         <antcallback target="t1"/>
         <antcallback target="t2"/>
         <antcallback target="t3"/>
-        <antcallback target="t4"/>
-        <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t5"/>
     </target>
     <target name="t0">
-        <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="3907ea00-31f1-412f-ac20-ec9eff1b1ead"/>
-            <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
-            <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
-            <test name="com.airspan.testspan.jsystem.tests.enodeb.raw.parallel.StartCommandsSessionTest.startCommandSession"/>
-        </jsystem>
-    </target>
-    <target name="t1">
         <jsystem-ant antfile="${scenarios.base}/scenarios/cli_help.xml">
             <property name="jsystem.uuid" value="789dc4cd-f1c6-4e61-a8e8-68ee205267fa"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
-    <target name="t2">
+    <target name="t1">
         <jsystem-ant antfile="${scenarios.base}/scenarios/cli_multiple_access.xml">
             <property name="jsystem.uuid" value="bbfdc481-0abe-45fb-9f35-87d126aecb4f"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
-    <target name="t3">
+    <target name="t2">
         <jsystem-ant antfile="${scenarios.base}/scenarios/cli_ifconfig.xml">
             <property name="jsystem.uuid" value="897f4c1b-2421-4cbc-8277-65571b1fde62"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
-    <target name="t4">
+    <target name="t3">
         <jsystem-ant antfile="${scenarios.base}/scenarios/cli_show_banks.xml">
             <property name="jsystem.uuid" value="e76da5e4-5eaf-4ecb-9581-fa62070f92e4"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
-    </target>
-    <target name="t5">
-        <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="d0841efc-dcf8-4152-a94d-e2bdbe76dbf7"/>
-            <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
-            <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
-            <test name="com.airspan.testspan.jsystem.tests.enodeb.raw.parallel.StopCommandsSessionTest.stopCommandSession"/>
-        </jsystem>
     </target>
 </project>
