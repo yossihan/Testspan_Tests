@@ -27,15 +27,15 @@
         </jsystem-ant>
     </target>
     <target name="t1">
-        <jsystem-ant antfile="${scenarios.base}/scenarios/cli_ifconfig.xml">
-            <property name="jsystem.uuid" value="897f4c1b-2421-4cbc-8277-65571b1fde62"/>
+        <jsystem-ant antfile="${scenarios.base}/scenarios/cli_show_banks.xml">
+            <property name="jsystem.uuid" value="e76da5e4-5eaf-4ecb-9581-fa62070f92e4"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
     <target name="t2">
-        <jsystem-ant antfile="${scenarios.base}/scenarios/cli_show_banks.xml">
-            <property name="jsystem.uuid" value="e76da5e4-5eaf-4ecb-9581-fa62070f92e4"/>
+        <jsystem-ant antfile="${scenarios.base}/scenarios/cli_ifconfig.xml">
+            <property name="jsystem.uuid" value="897f4c1b-2421-4cbc-8277-65571b1fde62"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
