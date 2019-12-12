@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sut validators="">
+	<NetspanWS>
+		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
+		<hostname>192.168.57.153</hostname>
+	</NetspanWS>
+
+	<enb_1>
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirStrand1300</class>
+		<netspanName>TDE4-AT1300-160</netspanName>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>h=KUK4dJ</readCommunity>
+			<writeCommunity>BcqRz?3Z</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>20.19.82.35</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<ipAddress>20.19.82.35</ipAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.67</comName>
+				<port>4001</port>
+			</serialCom>
+		</xlp>
+	</enb_1>
+
+	<EPC>
+		<class>com.airspan.testspan.jsystem.sysobjs.epc.CiscoEpc</class>
+		<ipAddress>192.168.61.117</ipAddress>
+		<username>admin</username>
+		<password>SWITcis!</password>
+	</EPC>
+
+</sut>
