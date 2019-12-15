@@ -37,18 +37,18 @@
     </target>
     <target name="t1">
         <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="34ea8419-3d48-4d05-8b5e-bceb7b9db805"/>
+            <sysproperty key="jsystem.uuid" value="d2e4a3e6-4244-41b3-a986-5ac449b9e1ab"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
-            <test name="com.airspan.testspan.jsystem.tests.enodeb.WaitForEnodebStateTest.waitForEnodebState"/>
+            <test name="com.airspan.testspan.jsystem.tests.enodeb.RebootEnodebTest.rebootEnodeb"/>
         </jsystem>
     </target>
     <target name="t2">
         <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="0a831ac6-c188-4906-9c74-20e636326bcd"/>
+            <sysproperty key="jsystem.uuid" value="34ea8419-3d48-4d05-8b5e-bceb7b9db805"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
-            <test name="com.airspan.testspan.jsystem.tests.enodeb.EnodebStateTests.checkIfPhyConnected"/>
+            <test name="com.airspan.testspan.jsystem.tests.enodeb.WaitForEnodebStateTest.waitForEnodebState"/>
         </jsystem>
     </target>
     <target name="t3">
@@ -69,7 +69,7 @@
     </target>
     <target name="t5">
         <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="d2e4a3e6-4244-41b3-a986-5ac449b9e1ab"/>
+            <sysproperty key="jsystem.uuid" value="a834a343-aac3-447c-97b0-10d042c59eb6"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
             <test name="com.airspan.testspan.jsystem.tests.enodeb.RebootEnodebTest.rebootEnodeb"/>
