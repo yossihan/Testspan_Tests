@@ -18,8 +18,8 @@
 	<Mss>1290</Mss>
 	
 	<ues>static1;static3</ues>
-	<dyns>dyn7;dyn8</dyns>
-	<unues>static1;static3;static5;static6;dyn9</unues>
+	<dyns>dyn7;dyn8;dyn9</dyns>
+	<unues>static1;static3;static5;static6</unues>
 
 	
 	<ues_type>
@@ -473,7 +473,7 @@
 		<ueList index="4">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1_enb_2_HO.ptp</description>
-            <ues>dyn7,dyn8</ues>
+            <ues>dyn7,dyn8,dyn9</ues>
         </ueList>
 		
     </ue_lists>
