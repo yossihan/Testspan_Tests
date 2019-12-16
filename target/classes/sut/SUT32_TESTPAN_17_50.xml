@@ -412,7 +412,7 @@
         </attenuators>
         <waitTime>1000</waitTime>
         <stepTime>500</stepTime>
-        <attenuationStep>2</attenuationStep>
+        <attenuationStep>1</attenuationStep>
         <maxAttenuation>30</maxAttenuation>
         <minAttenuation>0</minAttenuation>
       
@@ -441,7 +441,7 @@
 		</attenuators>
 		<waitTime>1000</waitTime>
 		<stepTime>500</stepTime>
-		<attenuationStep>2</attenuationStep>
+		<attenuationStep>1</attenuationStep>
 		<maxAttenuation>30</maxAttenuation>
 		<minAttenuation>0</minAttenuation>
 	</HO_attenuator>
