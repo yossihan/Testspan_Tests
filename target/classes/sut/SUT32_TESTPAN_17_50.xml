@@ -410,7 +410,7 @@
                 <comName>192.168.58.170</comName>
             </serialCom>
         </attenuators>
-        <waitTime>0</waitTime>
+        <waitTime>500</waitTime>
         <stepTime>500</stepTime>
         <attenuationStep>2</attenuationStep>
         <maxAttenuation>30</maxAttenuation>
@@ -439,7 +439,7 @@
 				<comName>192.168.58.170</comName>
 			</serialCom>
 		</attenuators>
-		<waitTime>0</waitTime>
+		<waitTime>500</waitTime>
 		<stepTime>500</stepTime>
 		<attenuationStep>2</attenuationStep>
 		<maxAttenuation>30</maxAttenuation>
