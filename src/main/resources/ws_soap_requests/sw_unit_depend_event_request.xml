@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <Credentials xmlns="http://Airspan.Netspan.WebServices">
+            <Username>wsadmin</Username>
+            <Password>password</Password>
+        </Credentials>
+    </soap:Header>
+    <soap:Body>
+        <EventListNode xmlns="http://Airspan.Netspan.WebServices">
+            <NodeName>TDE4-AV1500-162</NodeName>
+            <StartDate>2019-11-18T13:00:29</StartDate>
+            <EndDate>2019-11-18T13:20:29</EndDate>
+        </EventListNode>
+    </soap:Body>
+</soap:Envelope>
