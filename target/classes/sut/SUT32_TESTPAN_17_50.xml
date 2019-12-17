@@ -37,6 +37,8 @@
 		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirHarmony4200</class>
 		<netspanName>SWIT32-Harmony130</netspanName>
 		<band>B42LH</band>
+		<LteCoulcolatorUL>12</LteCoulcolatorUL>
+		<LteCoulcolatorDL>100</LteCoulcolatorDL>
 		<duplexMode>TDD</duplexMode>
 		<System_Profile>SR17.0v11 AirHarmony system defaults</System_Profile>
 		<eNB_Adv_Profile>SWIT32_Harmony_130</eNB_Adv_Profile>
@@ -47,6 +49,7 @@
 		<Son_Profile>SR14.2 AirHarmony ANR PCI RSI Enable</Son_Profile>
 		<NeighbourManagement>AirHarmony All PCI</NeighbourManagement>
 		<softwareImage>SWIT32-Harmony130</softwareImage>
+		
 
 		<!-- CELL1 Profiles -->
 		<cell_1>	
@@ -91,6 +94,8 @@
 		<netspanName>SWIT32-AirSpeed84</netspanName>
 		<duplexMode>TDD</duplexMode>
 		<band>B42</band>
+		<LteCoulcolatorUL>12</LteCoulcolatorUL>
+		<LteCoulcolatorDL>100</LteCoulcolatorDL>
 		<eNBID>a8875010021571a</eNBID> 
 		<System_Profile>SR17.0v10 AirSpeed-Relay system defaults</System_Profile>
 		<eNB_Adv_Profile>SR16.5 AS_1250_GPL_SB_R1</eNB_Adv_Profile>
@@ -115,6 +120,7 @@
 		<relay>
 			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Relay</class>
 			<Role>Relay_eNodeB</Role>
+			<ipAddress>192.0.2.84</ipAddress>
 			<System_Default_Profile>SR17.5v2 AirSpeed-Relay Relay system defaults</System_Default_Profile>
             <Relay_Profile>SR16.5 AS_1250_GPL_SB_R1</Relay_Profile>
             <Relay_Advanced_Profile>SR16.5 AirSpeed Defaults_GPL_SB_R1</Relay_Advanced_Profile>
