@@ -112,7 +112,7 @@
         </snmp>     
     </ue1>
     <ue2>
-        <class>com.airspan.testspan.jsystem.sysobjs.ue....</class>
+        <class>com.airspan.testspan.jsystem.sysobjs.ue.ZemtelUe</class>
         <wanIpAddress>44.44.3.230</wanIpAddress>
         <lanIpAddress>198.16.1.254</lanIpAddress>
         <iperfDlIpAddress>91.95.1.240</iperfDlIpAddress>
