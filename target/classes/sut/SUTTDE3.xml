@@ -111,5 +111,21 @@
             <strAddress>100.35.1.254</strAddress>
         </snmp>     
     </ue1>
-
+    <ue2>
+        <class>com.airspan.testspan.jsystem.sysobjs.ue....</class>
+        <wanIpAddress>44.44.3.230</wanIpAddress>
+        <lanIpAddress>198.16.1.254</lanIpAddress>
+        <iperfDlIpAddress>91.95.1.240</iperfDlIpAddress>
+        <iperfUlIpAddress>198.15.1.240</iperfUlIpAddress>
+        <imsi>200010001008805</imsi>
+        <connectedToEnb>enb_1,enb_2</connectedToEnb>
+        <ueCategory>4</ueCategory>
+        <snmp>
+            <class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+            <readCommunity>public</readCommunity>
+            <writeCommunity>private</writeCommunity>
+            <snmpVersion>V2</snmpVersion>
+            <strAddress>100.35.1.254</strAddress>
+        </snmp>     
+    </ue2>
 </sut>
