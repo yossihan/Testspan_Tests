@@ -90,7 +90,7 @@
 		<ueList index="0">
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
 			<description>ue1.ptp</description>
-			<ues>ue1</ues>
+			<ues>ue1,ue2</ues>
 		</ueList>
 	</ue_lists>
 
