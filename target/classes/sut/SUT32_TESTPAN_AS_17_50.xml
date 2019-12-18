@@ -14,21 +14,20 @@
 	<SingleDUT>enb_1</SingleDUT>
     <SecondSingleDUT>enb_2</SecondSingleDUT>
 	<Donor>enb_4</Donor>
-	<NetspanVersion>17.00</NetspanVersion>
+	<NetspanVersion>17.5</NetspanVersion>
 	<Mss>1290</Mss>
 	
-	<ues>static1;static3</ues>
-	<dyns>dyn7;dyn8</dyns>
-	<unues>static1;static3;static5;static6;dyn9</unues>
+	<ues>static5;static6</ues>
+	<dyns>dyn9;dyn8</dyns>
+	<unues>static1;static3;static5;static6;dyn7</unues>
 
 	
 	<ues_type>
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
 	</ues_type>
 	
-	 
 	<NetspanWS>
-		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
+		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_5.NetspanWsImpl</class>
 		<hostname>192.168.58.34</hostname>
 	</NetspanWS>
 	
@@ -37,6 +36,8 @@
 		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirHarmony4200</class>
 		<netspanName>SWIT32-Harmony130</netspanName>
 		<band>B42LH</band>
+		<LteCoulcolatorUL64QAM>13.3</LteCoulcolatorUL64QAM>
+		<LteCoulcolatorDL64QAM>109.2</LteCoulcolatorDL64QAM>
 		<duplexMode>TDD</duplexMode>
 		<System_Profile>SR17.0v11 AirHarmony system defaults</System_Profile>
 		<eNB_Adv_Profile>SWIT32_Harmony_130</eNB_Adv_Profile>
@@ -91,6 +92,8 @@
 		<netspanName>SWIT32-AirSpeed84</netspanName>
 		<duplexMode>TDD</duplexMode>
 		<band>B42</band>
+		<LteCoulcolatorUL64QAM>13.3</LteCoulcolatorUL64QAM>
+		<LteCoulcolatorDL64QAM>109.2</LteCoulcolatorDL64QAM>
 		<eNBID>a8875010021571a</eNBID> 
 		<System_Profile>SR17.0v10 AirSpeed-Relay system defaults</System_Profile>
 		<eNB_Adv_Profile>SR16.5 AS_1250_GPL_SB_R1</eNB_Adv_Profile>
@@ -410,7 +413,7 @@
                 <comName>192.168.58.170</comName>
             </serialCom>
         </attenuators>
-        <waitTime>1000</waitTime>
+        <waitTime>0</waitTime>
         <stepTime>500</stepTime>
         <attenuationStep>2</attenuationStep>
         <maxAttenuation>30</maxAttenuation>
@@ -439,7 +442,7 @@
 				<comName>192.168.58.170</comName>
 			</serialCom>
 		</attenuators>
-		<waitTime>1000</waitTime>
+		<waitTime>0</waitTime>
 		<stepTime>500</stepTime>
 		<attenuationStep>2</attenuationStep>
 		<maxAttenuation>30</maxAttenuation>
@@ -453,16 +456,16 @@
         <ueList index="0">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.ptp</description>
-            <ues>static1</ues>
+            <ues>static5</ues>
         </ueList>
         <ueList index="1">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.pt2p</description>
-            <ues>static1,static3</ues>
+            <ues>static5,static6</ues>
         </ueList>
         <ueList index="2">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
-            <description>enb_1.ptp</description>
+            <description>enb_2.ptp</description>
             <ues>static3</ues>
         </ueList>
 		<ueList index="3">
@@ -473,7 +476,7 @@
 		<ueList index="4">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1_enb_2_HO.ptp</description>
-            <ues>dyn7,dyn8</ues>
+            <ues>dyn9,dyn8</ues>
         </ueList>
 		
     </ue_lists>
