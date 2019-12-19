@@ -19,6 +19,7 @@
 	
 	<ues>static1;static3</ues>
 	<dyns>dyn8;dyn9</dyns>
+	<dyns2>dyn8,dyn9</dyns2>
 	<unues>static1;static3;static5;static6;dyn7</unues>
 
 	
