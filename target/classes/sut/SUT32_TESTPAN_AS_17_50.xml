@@ -17,7 +17,7 @@
 	<NetspanVersion>17.5</NetspanVersion>
 	<Mss>1290</Mss>
 	
-	<ues>static5;static6</ues>
+	<ues>static5;dyn7</ues>
 	<dyns>dyn9;dyn8</dyns>
 	<unues>static1;static3;static5;static6;dyn7</unues>
 
@@ -118,6 +118,7 @@
 		<relay>
 			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Relay</class>
 			<Role>Relay_eNodeB</Role>
+			<ipAddress>192.0.2.84</ipAddress>
 			<System_Default_Profile>SR17.5v2 AirSpeed-Relay Relay system defaults</System_Default_Profile>
             <Relay_Profile>SR16.5 AS_1250_GPL_SB_R1</Relay_Profile>
             <Relay_Advanced_Profile>SR16.5 AirSpeed Defaults_GPL_SB_R1</Relay_Advanced_Profile>
@@ -461,7 +462,7 @@
         <ueList index="1">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.pt2p</description>
-            <ues>static5,static6</ues>
+            <ues>static5,dyn7</ues>
         </ueList>
         <ueList index="2">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
