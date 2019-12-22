@@ -92,7 +92,7 @@
 		<netspanName>SWIT32-AirSpeed84</netspanName>
 		<duplexMode>TDD</duplexMode>
 		<band>B42</band>
-		<LteCoulcolatorUL64QAM>13.3</LteCoulcolatorUL64QAM>
+		<LteCoulcolatorUL64QAM>7</LteCoulcolatorUL64QAM>
 		<LteCoulcolatorDL64QAM>109.2</LteCoulcolatorDL64QAM>
 		<eNBID>a8875010021571a</eNBID> 
 		<System_Profile>SR17.0v10 AirSpeed-Relay system defaults</System_Profile>
