@@ -21,7 +21,7 @@
         <antcallback return="TestResultToReturn" target="t4"/>
         <antcallback target="t5"/>
         <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t6"/>
-        <antcallback target="t7"/>
+        <antcallback return="TestResultToReturn" target="t7"/>
         <antcallback target="t8"/>
         <antcallback return="TestResultToReturn, StringToReturn" target="t9"/>
         <antcallback target="t10"/>
@@ -31,7 +31,7 @@
         <antcallback return="TestResultToReturn" target="t14"/>
         <antcallback target="t15"/>
         <antcallback return="TestResultToReturn" target="t16"/>
-        <antcallback return="TestResultToReturn" target="t17"/>
+        <antcallback target="t17"/>
         <antcallback return="SnmpReturnValue, TestResultToReturn" target="t18"/>
         <antcallback target="t19"/>
         <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t20"/>
@@ -51,7 +51,7 @@
         <antcallback return="TestResultToReturn" target="t25"/>
         <antcallback target="t26"/>
         <antcallback return="TestResultToReturn" target="t27"/>
-        <antcallback return="TestResultToReturn" target="t28"/>
+        <antcallback target="t28"/>
         <antcallback return="SnmpReturnValue, TestResultToReturn" target="t29"/>
     </target>
     <target name="t0">
@@ -112,10 +112,10 @@
     </target>
     <target name="t7">
         <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="b350f8e0-c2ec-4ac6-a37b-aa7bc7d70c15"/>
+            <sysproperty key="jsystem.uuid" value="6ceb2afc-6763-4b88-bae6-99be92ff29c7"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
-            <test name="com.airspan.testspan.jsystem.tests.general.WaitTest.waitTest"/>
+            <test name="com.airspan.testspan.jsystem.tests.web_services.ValidateSoapResponseTest.validateSoapResponse"/>
         </jsystem>
     </target>
     <target name="t8">
