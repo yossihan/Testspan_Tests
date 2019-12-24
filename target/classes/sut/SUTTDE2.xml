@@ -30,28 +30,42 @@
 	<EPC>
 		<class>com.airspan.testspan.jsystem.sysobjs.epc.CiscoEpc</class>
 		<ipAddress>192.168.59.99</ipAddress>
-		<username>admin</username>
-		<password>XXX</password>
+		<username>root</username>
+		<password>SWITcis</password>
 	</EPC>
 
+	<iperf_server_1>
+        <class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+        <userName>root</userName>
+        <password>SWITswit</password>
+        <ipAddress>192.168.58.140</ipAddress>
+    </iperf_server_1>
+
+    <iperf_server_2>
+        <class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+        <userName>root</userName>
+        <password>SWITswit</password>
+        <ipAddress>192.168.56.80</ipAddress>
+    </iperf_server_2>
+	
 	<ue_lists>
 		<class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
 		<ueList index="0">
 			<class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
 			<description>ue1.ptp</description>
-			<ues>ue1,ue2</ues>
+			<ues>ue1</ues>
 		</ueList>
 	</ue_lists>
 
     <ue1>
         <class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
-        <wanIpAddress>44.44.3.220</wanIpAddress>
-        <lanIpAddress>198.15.1.254</lanIpAddress>
-        <iperfDlIpAddress>91.95.1.240</iperfDlIpAddress>
-        <iperfUlIpAddress>198.15.1.240</iperfUlIpAddress>
-        <imsi>200010001008290</imsi>
-        <connectedToEnb>enb_1,enb_2</connectedToEnb>
-        <ueCategory>4</ueCategory>
+        <wanIpAddress>44.44.2.1</wanIpAddress>
+        <lanIpAddress>198.17.1.254</lanIpAddress>
+        <iperfDlIpAddress>91.92.1.240XXX</iperfDlIpAddress>
+        <iperfUlIpAddress>198.17.1.240</iperfUlIpAddress>
+        <imsi>200010001008204</imsi>
+        <connectedToEnb>enb_1</connectedToEnb>
+        <ueCategory>12</ueCategory>
         <snmp>
             <class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
             <readCommunity>public</readCommunity>
