@@ -7,8 +7,8 @@
         </Credentials>
     </soap:Header>
     <soap:Body>
-        <EnbConfigGet xmlns="http://Airspan.Netspan.WebServices">
-            <NodeName>TDE3-AirUnity587</NodeName>
-            </EnbConfigGet>
+        <RadioProfileGet xmlns="http://Airspan.Netspan.WebServices">
+            <Name>TDE3-Unity156</Name>
+        </RadioProfileGet>
     </soap:Body>
 </soap:Envelope>
