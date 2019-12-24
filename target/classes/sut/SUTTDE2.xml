@@ -65,7 +65,7 @@
         <iperfUlIpAddress>198.17.1.240</iperfUlIpAddress>
         <imsi>200010001008204</imsi>
         <connectedToEnb>enb_1</connectedToEnb>
-        <ueCategory>12</ueCategory>
+        <ueCategory>4</ueCategory>
         <snmp>
             <class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
             <readCommunity>public</readCommunity>
