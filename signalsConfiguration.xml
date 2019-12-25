@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+a configuration file used for Analyze signals test.
+the configuration file represent all the signals (Alarms\event) the user want to check.
+
+1. <signalsConfiguration> - root element, should warp all the other elements. can contain multiple <signals key="bla" ignoreAny="true"> elements.
+
+2. <signals key="String" ignoreAny="true\false"> - represent a single set of rules for Analyze signals test.
+    "key" -      this string  distinguishes the element. this string should be inserted to the test.
+    "ignoreAny" - "true": ignore any signal that not listed inside <signalsExpectedList>.
+                 "false": ignore only the signals listed in the <signalsIgnoreList>.
+
+3. <signalsExpectedList> - represent list of signals of all the signals for the test that should appears in netspan.
+                           the signals can be inserted in specific order for the order check.
+                           if a signal appears multiple times in netspan it should be inserted the exact amount of times to the list for the test to pass.
+
+4. <signalsFailureList> -  represent list of signals of all the signals for the test that should not appears in netspan.
+                           It's enough that one signal from the list appears in netspan for the test to fail.
+
+5. <signalsIgnoreList> -   represent list of signals of all the signals for the test that will be ignored if appears in netspan.
+                           it's enough to write the signal once for all it's appearance in netspan to be ignored in the test.
+
+6. <alarm> - represent an alarm type signal
+7. <event> - represent an event type signal
+
+Example:
+<signalsConfiguration>
+    <signals key="String" ignoreAny="true\false">
+
+        <signalsExpectedList>
+            <alarm>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+                <changeType>Created\Raised\Cleared\Acknowledged\Released\Deleted\Updated\UserClear</changeType>
+            </alarm>
+            <event>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+            </event>
+        </signalsExpectedList>
+
+        <signalsFailureList>
+            <alarm>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+                <changeType>Created\Raised\Cleared\Acknowledged\Released\Deleted\Updated\UserClear</changeType>
+            </alarm>
+            <event>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+        </signalsFailureList>
+
+        <signalsIgnoreList>
+            <alarm>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+                <changeType>Created\Raised\Cleared\Acknowledged\Released\Deleted\Updated\UserClear</changeType>
+            </alarm>
+            <event>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+        </signalsIgnoreList>
+    </signals>
+
+    <signals key="String" ignoreAny="true\false">
+
+        <signalsExpectedList>
+            <alarm>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+                <changeType>Created\Raised\Cleared\Acknowledged\Released\Deleted\Updated\UserClear</changeType>
+            </alarm>
+            <event>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+            </event>
+        </signalsExpectedList>
+
+        <signalsFailureList>
+            <alarm>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+                <changeType>Created\Raised\Cleared\Acknowledged\Released\Deleted\Updated\UserClear</changeType>
+            </alarm>
+            <event>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+        </signalsFailureList>
+
+        <signalsIgnoreList>
+            <alarm>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+                <changeType>Created\Raised\Cleared\Acknowledged\Released\Deleted\Updated\UserClear</changeType>
+            </alarm>
+            <event>
+                <id>int</id>
+                <typeContains>String</typeContains>
+                <typeNotContains>String</typeNotContains>
+                <infoContains>String</infoContains>
+                <infoNotContains>String</infoNotContains>
+        </signalsIgnoreList>
+    </signals>
+</signalsConfiguration>
+-->
+
+
+<signalsConfiguration>
+
+	<!--AirStrand1300_TDD_B41_LiteCoMP-->
+	<signals key="Auto_PCI_Allocation" ignoreAny="false">
+
+		<signalsExpectedList>
+			<event>
+				<EventType>Auto-PCI Allocation</EventType>
+				<EventInfo>PCI=329, Info=PCI COLLISION RESOLVED</EventInfo>
+				<SourceName>AH4K-TDE3</SourceName>
+			</event>
+		</signalsExpectedList>
+		<signalsFailureList>
+		</signalsFailureList>
+		<signalsIgnoreList>
+		</signalsIgnoreList>
+	</signals>
+
+</signalsConfiguration>
