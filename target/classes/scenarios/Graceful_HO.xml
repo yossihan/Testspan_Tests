@@ -36,7 +36,7 @@
         <antcallback return="TestResultToReturn, StopTimeToReturn" target="t19"/>
         <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t20"/>
         <antcallback return="SnmpReturnValue, TestResultToReturn" target="t21"/>
-        <antcallback return="TestResultToReturn" target="t22"/>
+        <antcallback target="t22"/>
         <antcallback target="t23"/>
         <antcallback return="TestResultToReturn" target="t24"/>
         <antcallback return="TestResultToReturn" target="t25"/>
