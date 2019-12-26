@@ -11,9 +11,9 @@
             <NodeName>TDE3-AirUnity587</NodeName>
             <EnbDetails>
                 <SonProfile>Son_AutoPCI_Unity</SonProfile>
-				<LteCell>
-					<RadioProfile>Unity587-AutoPCI</RadioProfile>
-				<LteCell>
+                <LteCell>
+                    <RadioProfile>Unity587-AutoPCI</RadioProfile>
+                </LteCell>
             </EnbDetails>
         </EnbConfigSet>
     </soap:Body>
