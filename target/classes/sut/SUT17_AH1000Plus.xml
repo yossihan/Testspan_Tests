@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><sut validators="">
+
+<HW_Family>XLP</HW_Family>
+<SW_Under>123</SW_Under>
+<SW_Dots>123</SW_Dots>
+<HW_Name>123</HW_Name>
+<HW_Type>AirHarmony</HW_Type>
+<Mss>1460</Mss>
+<opPassword17>PZ8Hfy3=Ve7fQkt*</opPassword17>
+
+<ues_type>
+	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
+</ues_type>
+
+<ues>ue4;ue5;ue6</ues>
+
+	<!-- <SW_Path>123</SW_Path>
+	<SW_Image>123</SW_Image>
+	 -->
+	<NetspanWS>
+		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_0.NetspanWsImpl</class>
+		<hostname>192.168.58.103</hostname>
+	</NetspanWS>
+	
+	<!-- AirHarmony1000Plus -->
+	<enb_1>       
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirHarmony1000Plus</class> -
+		<netspanName>SWIT17-Harmony42</netspanName>
+		<band>B40H</band>
+		<duplexMode>TDD</duplexMode>
+			<cell_1>
+            <Cell_Adv_Profile>SR15.0 AirHarmony Defaults</Cell_Adv_Profile>
+            <Radio_Profile>SWIT17_Harmony42_2.39 GHz_B40_20MHz_FC2_10dBm</Radio_Profile>
+            <Mobility_Profile>SR15.0v2 AirHarmony-I:1727</Mobility_Profile>
+            <Embms_Profile>SR14.5 AirHarmony Disabled</Embms_Profile>
+            <Traffic_Mng>SR15.5 AirHarmony Defaults</Traffic_Mng>
+            <Call_Trace>AirSpeed Call Trace Disabled</Call_Trace>
+            <Tac>12594</Tac>
+        </cell_1>
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>fd02:20:20:62::42</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<ipAddress>fd02:20:20:62::42</ipAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.12</comName>
+				<port>4005</port>
+			</serialCom>
+		</xlp>
+		<dans index="0">
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Dan</class>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.12</comName>
+				<port>4006</port>
+			</serialCom>
+		</dans>
+	</enb_1> 
+	<!--static Ues -->
+		<ue5>
+			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+			<wanIpAddress>42.42.17.175</wanIpAddress>
+			<lanIpAddress>192.17.5.254</lanIpAddress>
+			<iperfUlIpAddress>192.17.5.240</iperfUlIpAddress>
+			<iperfDlIpAddress>91.91.17.17</iperfDlIpAddress>
+			<imsi>200010001004361</imsi>
+			<connectedToEnb>enb_1</connectedToEnb>
+			<ueCategory>6</ueCategory>
+			<snmp>
+				<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+				<readCommunity>public</readCommunity>
+				<writeCommunity>private</writeCommunity>
+				<snmpVersion>V2</snmpVersion>
+				<strAddress>192.17.5.254</strAddress>
+			</snmp>
+			</ue5>
+		<ue6>
+			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+			<wanIpAddress>42.42.17.176</wanIpAddress>
+			<lanIpAddress>192.17.6.254</lanIpAddress>
+			<iperfUlIpAddress>192.17.6.240</iperfUlIpAddress>
+			<iperfDlIpAddress>91.91.17.21</iperfDlIpAddress>
+			<imsi>200010001004359</imsi>
+			<connectedToEnb>enb_1</connectedToEnb>
+			<ueCategory>6</ueCategory>
+			<snmp>
+				<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+				<readCommunity>public</readCommunity>
+				<writeCommunity>private</writeCommunity>
+				<snmpVersion>V2</snmpVersion>
+				<strAddress>192.17.6.254</strAddress>
+			</snmp>
+		</ue6>
+		
+		<!--dynamic Ue -->
+		<ue3>
+			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+			<wanIpAddress>42.42.17.173</wanIpAddress>
+			<lanIpAddress>192.17.3.254</lanIpAddress>
+			<iperfUlIpAddress>192.17.3.240</iperfUlIpAddress>
+			<iperfDlIpAddress>91.91.17.9</iperfDlIpAddress>
+			<imsi>200010001004113</imsi>
+			<connectedToEnb>enb_1</connectedToEnb>
+			<ueCategory>6</ueCategory>
+			<snmp>
+				<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+				<readCommunity>public</readCommunity>
+				<writeCommunity>private</writeCommunity>
+				<snmpVersion>V2</snmpVersion>
+				<strAddress>192.17.3.254</strAddress>
+			</snmp>
+		</ue3>
+		
+		<ue4>
+			<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+			<wanIpAddress>42.42.17.174</wanIpAddress>
+			<lanIpAddress>192.17.4.254</lanIpAddress>
+			<iperfUlIpAddress>192.17.4.240</iperfUlIpAddress>
+			<iperfDlIpAddress>91.91.17.13</iperfDlIpAddress>
+			<imsi>200010001004113</imsi>
+			<connectedToEnb>enb_1</connectedToEnb>
+			<ueCategory>6</ueCategory>
+			<snmp>
+				<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+				<readCommunity>public</readCommunity>
+				<writeCommunity>private</writeCommunity>
+				<snmpVersion>V2</snmpVersion>
+				<strAddress>192.17.4.254</strAddress>
+			</snmp>
+		</ue4>
+		
+		<ue_lists>
+        <class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
+        <ueList index="0">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.ptp</description>
+            <ues>ue5</ues>
+        </ueList>
+		<ueList index="2">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.pt2p</description>
+            <ues>ue5,ue6</ues>
+        </ueList>
+        <ueList index="1">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.pt3p</description>
+            <ues>ue4,ue5,ue6</ues>
+        </ueList>
+               
+    </ue_lists>
+	<!-- DL -->
+	<iperf_server_1>
+		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+		<userName>swit17_1</userName>
+		<password>swit17_1</password>
+		<ipAddress>100.100.0.34</ipAddress>
+	</iperf_server_1>
+	<!-- UL -->
+	<iperf_server_2>
+		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+		<userName>swit17_1</userName>
+		<password>swit17_1</password>
+		<ipAddress>100.100.0.171</ipAddress>
+	</iperf_server_2>
+	
+</sut>
