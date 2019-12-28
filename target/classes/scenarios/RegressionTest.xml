@@ -17,6 +17,7 @@
         <antcallback target="t0"/>
         <antcallback target="t1"/>
         <antcallback target="t2"/>
+        <antcallback target="t3"/>
     </target>
     <target name="t0">
         <jsystem-ant antfile="${scenarios.base}/scenarios/CustomerCLI.xml">
@@ -26,13 +27,20 @@
         </jsystem-ant>
     </target>
     <target name="t1">
+        <jsystem-ant antfile="${scenarios.base}/scenarios/Performance_TCP.xml">
+            <property name="jsystem.uuid" value="3aa7d398-11c5-4a95-b6f3-b93ae01e5cc9"/>
+            <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
+            <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
+        </jsystem-ant>
+    </target>
+    <target name="t2">
         <jsystem-ant antfile="${scenarios.base}/scenarios/StabilityUDP_TCP_2hrs.xml">
             <property name="jsystem.uuid" value="e4c35c13-f999-4536-9028-1321eac47c31"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
-    <target name="t2">
+    <target name="t3">
         <jsystem-ant antfile="${scenarios.base}/scenarios/Recovery.xml">
             <property name="jsystem.uuid" value="f5cdb469-12f3-4fc8-a3a2-ca5e9c52eee4"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
