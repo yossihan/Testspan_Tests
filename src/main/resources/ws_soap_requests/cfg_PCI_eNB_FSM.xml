@@ -12,8 +12,8 @@
             <EnbDetails>
                 <SonProfile>Son_AutoPCI_Unity</SonProfile>
                 <LteCell>
-                    <CellNumber>1</CellNumber>
-					<RadioProfile>Unity587-AutoPCI</RadioProfile>
+                	<CellNumber>1</CellNumber>
+			<RadioProfile>Unity587-AutoPCI</RadioProfile>
                 </LteCell>
             </EnbDetails>
         </EnbConfigSet>
