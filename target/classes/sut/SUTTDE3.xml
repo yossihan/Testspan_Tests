@@ -24,14 +24,14 @@
 				<port>4003</port>
 			</serialCom>
 		</xlp>
-		<relay>
+		<!--<relay>
 			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Relay</class>
-			<!--<serialCom>
+			<serialCom>
 				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
 				<comName>172.20.61.3</comName>
 				<port>4009</port>
-			</serialCom>-->
-		</relay>
+			</serialCom>
+		</relay>-->
 	</enb_1>
 
 	<enb_2>
