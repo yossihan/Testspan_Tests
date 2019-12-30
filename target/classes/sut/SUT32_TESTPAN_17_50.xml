@@ -17,14 +17,16 @@
 	<NetspanVersion>17.5</NetspanVersion>
 	<Mss>1290</Mss>
 	
-	<ues>static1;static3</ues>
-	<dyns>dyn8;dyn9</dyns>
-	<dyns2>dyn8,dyn9</dyns2>
+	<ues>static5;dyn7</ues>
+	<dyns>dyn9;dyn8</dyns>
+	<dyns2>dyn7,static5</dyns2>
+	<dyns3>dyn7</dyns3>  
 	<unues>static1;static3;static5;static6;dyn7</unues>
-
+	<unues2>static1;static3;static5;static6;dyn8;dyn9</unues2>
 	
 	<ues_type>
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
+	<MIB_OID_enb_asLteStkCellUeLinkStatusEmergencyCalls>1.3.6.1.4.1.989.1.20.1.4.75.1.19</MIB_OID_enb_asLteStkCellUeLinkStatusEmergencyCalls>
 	</ues_type>
 	
 	 
@@ -264,7 +266,7 @@
 		<lanIpAddress>192.32.7.254</lanIpAddress>
 		<iperfDlIpAddress>91.91.32.25</iperfDlIpAddress>
         <iperfUlIpAddress>192.32.7.240</iperfUlIpAddress>
-		<imsi>200010001008837</imsi>
+		<imsi>200010001008836</imsi>
 		<powerControllerMapping>aviosys/A4</powerControllerMapping>
 		<connectedToEnb>enb_2</connectedToEnb>
 		<ueCategory>4</ueCategory>
@@ -481,6 +483,11 @@
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1_enb_2_HO.ptp</description>
             <ues>dyn8,dyn9</ues>
+        </ueList>
+		<ueList index="5">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.7ptp</description>
+            <ues>dyn7</ues>
         </ueList>
 		
     </ue_lists>
