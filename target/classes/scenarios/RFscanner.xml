@@ -38,15 +38,6 @@
         <antcallback target="t21"/>
         <antcallback return="TestResultToReturn, LteVersion, RelayVersion, NetspanVersion, SystemDefaultProfile, SystemDefaultProfileRelay" target="t22"/>
         <antcallback target="t23"/>
-        <echo message="Check condition &quot;&quot; EQUALS &quot;&quot;"/>
-        <if>
-            <!--#Jsystem#-->
-            <jsystemscriptcondition fullUuid="${jsystem.parent.uuid}.${jsystem.uuid}.d10d58ff-8539-4316-852a-ad714c4a3133" language="javascript" params="str &lt;SEP&gt;  &lt;SEP&gt; EQUALS &lt;SEP&gt;  &lt;SEP&gt; false" parentName="${jsystem.parent.name}.${ant.project.name}" src="ifScriptCondition.js" value="false"/>
-            <then/>
-            <else>
-                <!--#Jsystem#-->
-            </else>
-        </if>
         <antcallback return="SnmpReturnValue, TestResultToReturn" target="t24"/>
         <antcallback return="TestResultToReturn" target="t25"/>
         <antcallback target="t26"/>
