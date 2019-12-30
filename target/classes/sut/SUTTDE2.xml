@@ -61,7 +61,7 @@
         <class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
         <wanIpAddress>44.44.2.1</wanIpAddress>
         <lanIpAddress>198.17.1.254</lanIpAddress>
-        <iperfDlIpAddress>91.92.1.240XXX</iperfDlIpAddress>
+        <iperfDlIpAddress>91.92.1.240</iperfDlIpAddress>
         <iperfUlIpAddress>198.17.1.240</iperfUlIpAddress>
         <imsi>200010001008204</imsi>
         <connectedToEnb>enb_1</connectedToEnb>
