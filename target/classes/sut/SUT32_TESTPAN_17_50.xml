@@ -20,9 +20,9 @@
 	<ues>static5;dyn7</ues>
 	<dyns>dyn9;dyn8</dyns>
 	<dyns2>dyn7,static5</dyns2>
-	<dyns3>dyn7</dyns3>  
+	<dyns3>dyn8</dyns3>  
 	<unues>static1;static3;static5;static6;dyn7</unues>
-	<unues2>static1;static3;static5;static6;dyn8;dyn9</unues2>
+	<unues2>static1;static3;static5;static6;dyn7;dyn9</unues2>
 	
 	<ues_type>
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
@@ -487,7 +487,7 @@
 		<ueList index="5">
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.7ptp</description>
-            <ues>dyn7</ues>
+            <ues>dyn8</ues>
         </ueList>
 		
     </ue_lists>
