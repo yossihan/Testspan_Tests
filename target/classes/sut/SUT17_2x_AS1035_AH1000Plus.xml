@@ -224,33 +224,66 @@
                
     </ue_lists>
 	
+	<EPC>
+		<class>com.airspan.testspan.jsystem.sysobjs.epc.CiscoEpc</class> 
+		<ipAddress>192.168.58.63</ipAddress> 
+		<username>admin</username>
+		<password>SWIT!cis</password>
+	</EPC>
+	 <rudat_set>
+        <class>com.airspan.testspan.jsystem.sysobjs.attenuator.AttenuatorSet</class>
+        <attenuators index="0">
+            <class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+            <maxAttenuation>30</maxAttenuation>
+            <serialCom>
+                <class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+                <port>4007</port>
+                <comName>192.168.58.170</comName>
+            </serialCom>
+        </attenuators>
+        <attenuators index="1">
+            <class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+            <maxAttenuation>30</maxAttenuation>
+            <serialCom>
+                <class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+                <port>4008</port>
+                <comName>192.168.58.170</comName>
+            </serialCom>
+        </attenuators>
+        <waitTime>0</waitTime>
+        <stepTime>500</stepTime>
+        <attenuationStep>2</attenuationStep>
+        <maxAttenuation>30</maxAttenuation>
+        <minAttenuation>0</minAttenuation>
+      
+    </rudat_set>
+		
 	<HO_attenuator>
 		<class>com.airspan.testspan.jsystem.sysobjs.attenuator.AttenuatorSet</class>
-			<attenuators index="0">
-				<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
-				<maxAttenuation>30</maxAttenuation>
-				<serialCom>
-					<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
-					<port>4007</port>
-					<comName>192.168.58.83</comName>
-				</serialCom>
-			</attenuators>
-			<attenuators index="1">
-				<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
-				<maxAttenuation>30</maxAttenuation>
-				<serialCom>
+		<attenuators index="0">
+			<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+			<maxAttenuation>30</maxAttenuation>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<port>4007</port>
+				<comName>192.168.58.83</comName>
+			</serialCom>
+		</attenuators>
+		<attenuators index="1">
+			<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+			<maxAttenuation>30</maxAttenuation>
+			<serialCom>
 				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
 				<port>4008</port>
 				<comName>192.168.58.83</comName>
-				</serialCom>
-			</attenuators>
-		<waitTime>1000</waitTime>
+			</serialCom>
+		</attenuators>
+		<waitTime>0</waitTime>
 		<stepTime>500</stepTime>
 		<attenuationStep>2</attenuationStep>
 		<maxAttenuation>30</maxAttenuation>
 		<minAttenuation>0</minAttenuation>
-</HO_attenuator>
-
+	</HO_attenuator>
 	<!-- DL -->
 	<iperf_server_1>
 		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
