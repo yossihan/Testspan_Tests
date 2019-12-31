@@ -257,7 +257,7 @@
 		<lanIpAddress>192.32.7.254</lanIpAddress>
 		<iperfDlIpAddress>91.91.32.25</iperfDlIpAddress>
         <iperfUlIpAddress>192.32.7.240</iperfUlIpAddress>
-		<imsi>200010001008837</imsi>
+		<imsi>200010001008836</imsi>
 		<powerControllerMapping>aviosys/A4</powerControllerMapping>
 		<connectedToEnb>enb_2</connectedToEnb>
 		<ueCategory>4</ueCategory>
