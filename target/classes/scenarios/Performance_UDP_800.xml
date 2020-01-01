@@ -14,58 +14,49 @@
     <taskdef classname="com.aqua.anttask.jsystem.JSystemDataDrivenTask" name="jsystemdatadriven"/>
     <taskdef classname="com.aqua.anttask.jsystem.JSystemSetAntProperties" name="jsystemsetantproperties"/>
     <target name="execute scenario">
-        <antcallback return="SnmpReturnValue, TestResultToReturn" target="t0"/>
+        <antcallback target="t0"/>
         <antcallback target="t1"/>
         <antcallback target="t2"/>
         <antcallback target="t3"/>
         <antcallback target="t4"/>
         <antcallback target="t5"/>
-        <antcallback target="t6"/>
     </target>
     <target name="t0">
-        <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="c496ace3-1dee-4dc7-907a-8bcacbb9c85c"/>
-            <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
-            <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
-            <test name="com.airspan.testspan.jsystem.tests.ue.UeSnmpActionTest.ueSnmpAction"/>
-        </jsystem>
-    </target>
-    <target name="t1">
         <jsystem-ant antfile="${scenarios.base}/scenarios/1_UE_UDP_BIDI_TPT_800.xml">
             <property name="jsystem.uuid" value="82889bae-acf7-4e10-a646-aba6bc0d74ce"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
-    <target name="t2">
+    <target name="t1">
         <jsystem-ant antfile="${scenarios.base}/scenarios/1_UE_UDP_DL_TPT_800.xml">
             <property name="jsystem.uuid" value="f716e803-447e-4602-9b93-2e85edd626c4"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
-    <target name="t3">
+    <target name="t2">
         <jsystem-ant antfile="${scenarios.base}/scenarios/1_UE_UDP_UL_TPT_800.xml">
             <property name="jsystem.uuid" value="1da52b93-056b-4dbf-9b7f-edc033bb8d51"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
-    <target name="t4">
+    <target name="t3">
         <jsystem-ant antfile="${scenarios.base}/scenarios/2_UE_UDP_BiDi_TPT_800.xml">
             <property name="jsystem.uuid" value="d89d450a-1a29-4e2c-b343-a3fc79771b45"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
-    <target name="t5">
+    <target name="t4">
         <jsystem-ant antfile="${scenarios.base}/scenarios/2_UE_UDP_DL_TPT_800.xml">
             <property name="jsystem.uuid" value="5595e8ef-88ac-4deb-9d20-5d28cd8cba50"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <property name="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
         </jsystem-ant>
     </target>
-    <target name="t6">
+    <target name="t5">
         <jsystem-ant antfile="${scenarios.base}/scenarios/2_UE_UDP_UL_TPT_800.xml">
             <property name="jsystem.uuid" value="4ea4c074-0b70-4530-a257-5f92b28abf47"/>
             <property name="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
