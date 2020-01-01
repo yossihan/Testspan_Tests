@@ -17,9 +17,9 @@
 	<NetspanVersion>17.5</NetspanVersion>
 	<Mss>1290</Mss>
 	
-	<ues>static5;dyn7</ues>
+	<ues>static5;static6</ues>
 	<dyns>dyn9;dyn8</dyns>
-	<dyns2>dyn7,static5</dyns2>
+	<dyns2>static6,static5</dyns2>
 	<dyns3>dyn8</dyns3>  
 	<unues>static1;static3;static5;static6;dyn7</unues>
 	<unues2>static1;static3;static5;static6;dyn7;dyn9</unues2>
