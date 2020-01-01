@@ -71,7 +71,7 @@
             <readCommunity>public</readCommunity>
             <writeCommunity>private</writeCommunity>
             <snmpVersion>V2</snmpVersion>
-            <strAddress>100.35.1.254</strAddress>
+            <strAddress>198.17.1.254</strAddress>
         </snmp>     
     </ue1>
 </sut>
