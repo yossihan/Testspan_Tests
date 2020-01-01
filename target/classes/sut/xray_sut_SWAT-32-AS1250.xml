@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sut validators="">
+
+
+<HW_Family>XLP</HW_Family>
+<SW_Under>123</SW_Under>
+<SW_Dots>123</SW_Dots>
+<HW_Name>123</HW_Name>
+<HW_Type>AirSpeed1250</HW_Type>
+<Mss>1460</Mss>
+<opPassword17>PZ8Hfy3=Ve7fQkt*</opPassword17>
+
+
+	
+	<NetspanVersion>17.5</NetspanVersion>
+	<Mss>1290</Mss>
+	
+	
+	<ues>static6;static5</ues> <!-- QAM  -->
+	
+	
+	<ues_type>
+	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
+	</ues_type>
+	
+	<NetspanWS>
+		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_5.NetspanWsImpl</class>
+		<hostname>192.168.58.34</hostname>
+	</NetspanWS>
+	
+	
+	<!-- AirSpeed 1250 -->
+	<enb_1>
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirSpeed1250</class>
+		<netspanName>SWIT32-AirSpeed84</netspanName>
+		<duplexMode>TDD</duplexMode>
+		<band>B42</band>
+		<LteCoulcolatorUL64QAM>13.3</LteCoulcolatorUL64QAM>
+		<LteCoulcolatorDL64QAM>109.2</LteCoulcolatorDL64QAM>
+		<eNBID>a8875010021571a</eNBID> 
+		<System_Profile>SR17.0v10 AirSpeed-Relay system defaults</System_Profile>
+		<eNB_Adv_Profile>SR16.5 AS_1250_GPL_SB_R1</eNB_Adv_Profile>
+		<Sync_Profile>SR16.5 AS_1250_GPL_SB_R1-GPS</Sync_Profile>
+		<Security_Profile>SR15.5 AirSpeed-Relay Default</Security_Profile>
+		<Net_Profile>SR16.5 AS_1250_GPL_SB_R1</Net_Profile>	
+		<Mng_Profile>SR16.5 AS_1250_GPL_SB_R1</Mng_Profile>
+		<Ngh_Profile>SR16.5 AS_1250_GPL_SB_R1</Ngh_Profile>
+		<Son_Profile>SR16.5 AS_1250_GPL_SB_R1</Son_Profile>
+		<softwareImage>SWIT32-Airspeed84</softwareImage>
+		                     <!-- CELL1 Profiles -->
+	 <cell_1>	
+		<Cell_Adv_Profile>SR16.5 AS_1250_GPL_SB_R1</Cell_Adv_Profile>
+		<Embms_Profile>SR16.5 AS_1250_GPL_SB_R1</Embms_Profile>
+		<Traffic_Mng>SR16.5 AS_1250_GPL_SB_R1</Traffic_Mng>
+		<Call_Trace>SR16.5 AS_1250_GPL_SB_R1</Call_Trace>
+		<Mobility_Profile>SR16.5 AS_1250_GPL_SB_R1-B</Mobility_Profile>
+		<Radio_Profile>SR16.5 AS_1250_GPL_SB_R1-84</Radio_Profile>
+		<Tac>4</Tac>		
+	 </cell_1>
+	 
+		<relay>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Relay</class>
+			<Role>Relay_eNodeB</Role>
+			<ipAddress>192.0.2.84</ipAddress>
+			<System_Default_Profile>SR17.5v2 AirSpeed-Relay Relay system defaults</System_Default_Profile>
+            <Relay_Profile>SR16.5 AS_1250_GPL_SB_R1</Relay_Profile>
+            <Relay_Advanced_Profile>SR16.5 AirSpeed Defaults_GPL_SB_R1</Relay_Advanced_Profile>
+		</relay>
+
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>h=KUK4dJ</readCommunity>
+			<writeCommunity>BcqRz?3Z</writeCommunity>
+			<snmpVersion>V1</snmpVersion>
+			<strAddress>192.0.2.84</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<band>42</band>
+			<ipAddress>192.0.2.84</ipAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.170</comName>
+				<port>4009</port>
+			</serialCom>
+		</xlp>
+	</enb_1>
+	
+	
+	
+
+	
+	
+	<!--AirVelocity donor-->
+	<enb_4>       
+		<class>com.airspan.testspan.jsystem.sysobjs.enodeb.AirVelocity1500T</class>
+		<netspanName>SWIT32-Velocity109</netspanName>
+		<band>B41</band>
+		<duplexMode>TDD</duplexMode>
+		
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V1</snmpVersion>
+			<strAddress>20.20.2.109</strAddress>
+		</snmp>
+		<xlp>
+			<class>com.airspan.testspan.jsystem.sysobjs.enodeb.component.Xlp</class>
+			<ipAddress>20.20.2.109</ipAddress>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<comName>192.168.58.170</comName>
+				<port>4011</port>
+			</serialCom>
+		</xlp>
+	</enb_4> 
+	
+
+
+	
+	
+
+	<static5>
+
+		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+		<wanIpAddress>42.42.32.15</wanIpAddress>
+		<lanIpAddress>192.32.5.254</lanIpAddress>
+		<iperfDlIpAddress>91.91.32.17</iperfDlIpAddress>
+        <iperfUlIpAddress>192.32.5.240</iperfUlIpAddress>
+		<imsi>200010001008835</imsi>
+		<powerControllerMapping>aviosys/A4</powerControllerMapping>
+		<connectedToEnb>enb_1</connectedToEnb>
+		<ueCategory>4</ueCategory>
+		
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.32.5.254</strAddress>
+		</snmp>
+
+	</static5>
+	
+	
+	
+	
+	<static6>
+
+		<class>com.airspan.testspan.jsystem.sysobjs.ue.GemtekUe</class>
+		<wanIpAddress>42.42.32.16</wanIpAddress>
+		<lanIpAddress>192.32.7.254</lanIpAddress>
+		<iperfDlIpAddress>91.91.32.25</iperfDlIpAddress>
+        <iperfUlIpAddress>192.32.7.240</iperfUlIpAddress>
+		<imsi>200010001008836</imsi>
+		<powerControllerMapping>aviosys/A4</powerControllerMapping>
+		<connectedToEnb>enb_1</connectedToEnb>
+		<ueCategory>4</ueCategory>
+
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>private</writeCommunity>
+			<snmpVersion>V2</snmpVersion>
+			<strAddress>192.32.6.254</strAddress>
+		</snmp>
+
+	</static6>
+	
+	
+	
+		
+	<aviosys>
+        <class>com.airspan.testspan.jsystem.sysobjs.power.controller.Aviosys9820</class>
+        <ipAddress>192.168.58.181</ipAddress>
+		<username>admin</username>
+		<password>12345678</password>
+		
+		<snmp>
+			<class>com.airspan.testspan.jsystem.sysobjs.snmp.Snmp</class>
+			<readCommunity>public</readCommunity>
+			<writeCommunity>public</writeCommunity>
+			<snmpVersion>V1</snmpVersion>
+		</snmp>
+		
+               <ports index="0">
+                  <class>com.airspan.testspan.jsystem.sysobjs.power.controller.PowerControllerPort</class>
+                  <port>A1</port>
+                  <description>1</description>
+               </ports>
+			   <ports index="1">
+                  <class>com.airspan.testspan.jsystem.sysobjs.power.controller.PowerControllerPort</class>
+                  <port>A2</port>
+                  <description>3</description>
+               </ports> 
+			   <ports index="2">
+                  <class>com.airspan.testspan.jsystem.sysobjs.power.controller.PowerControllerPort</class>
+                  <port>A3</port>
+                  <description>7_8_9</description>
+               </ports> 
+			   <ports index="3">
+                  <class>com.airspan.testspan.jsystem.sysobjs.power.controller.PowerControllerPort</class>
+                  <port>A4</port>
+                  <description>5_6</description>
+               </ports>
+	</aviosys>
+
+
+	<EPC>
+		<class>com.airspan.testspan.jsystem.sysobjs.epc.CiscoEpc</class> 
+		<ipAddress>192.168.58.63</ipAddress> 
+		<username>admin</username>
+		<password>SWIT!cis</password>
+	</EPC>
+	
+	
+	
+   <rudat_set>
+        <class>com.airspan.testspan.jsystem.sysobjs.attenuator.AttenuatorSet</class>
+        <attenuators index="0">
+            <class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+            <maxAttenuation>30</maxAttenuation>
+            <serialCom>
+                <class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+                <port>4004</port>
+                <comName>192.168.58.170</comName>
+            </serialCom>
+        </attenuators>
+        <attenuators index="1">
+            <class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+            <maxAttenuation>30</maxAttenuation>
+            <serialCom>
+                <class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+                <port>4010</port>
+                <comName>192.168.58.170</comName>
+            </serialCom>
+        </attenuators>
+        <waitTime>0</waitTime>
+        <stepTime>500</stepTime>
+        <attenuationStep>2</attenuationStep>
+        <maxAttenuation>30</maxAttenuation>
+        <minAttenuation>0</minAttenuation>
+      
+    </rudat_set>
+	
+	
+	<HO_attenuator>
+		<class>com.airspan.testspan.jsystem.sysobjs.attenuator.AttenuatorSet</class>
+		<attenuators index="0">
+			<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+			<maxAttenuation>30</maxAttenuation>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<port>4004</port>
+				<comName>192.168.58.170</comName>
+			</serialCom>
+		</attenuators>
+		<attenuators index="1">
+			<class>com.airspan.testspan.jsystem.sysobjs.attenuator.RudatAttenuator</class>
+			<maxAttenuation>30</maxAttenuation>
+			<serialCom>
+				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
+				<port>4010</port>
+				<comName>192.168.58.170</comName>
+			</serialCom>
+		</attenuators>
+		<waitTime>0</waitTime>
+		<stepTime>500</stepTime>
+		<attenuationStep>2</attenuationStep>
+		<maxAttenuation>30</maxAttenuation>
+		<minAttenuation>0</minAttenuation>
+	</HO_attenuator>
+<!--	http://asil-svg-testspan:8070/reports/exec_468/tests/test_1341575828128-15/test.html-->
+	
+
+    <ue_lists>
+        <class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
+        <ueList index="0">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.ptp</description>
+            <ues>static5</ues>
+        </ueList>
+        <ueList index="1"><!-- PTP UDP  -->
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.pt2p</description>
+            <ues>static5,static6</ues>
+        </ueList>
+        
+    </ue_lists>
+
+    <iperf_server_1>
+       <class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+        <userName>swit32</userName>
+        <password>swit32</password>
+        <ipAddress>100.100.0.34</ipAddress>
+    </iperf_server_1>
+
+	<iperf_server_2>
+		<class>com.airspan.testspan.jsystem.sysobjs.iperf.IperfServer</class>
+        <userName>swit32</userName>
+        <password>swit32</password>
+        <ipAddress>100.100.0.146</ipAddress>
+    </iperf_server_2>
+
+
+
+	<pingServer1>
+				<class>com.airspan.testspan.jsystem.sysobjs.station.WorkStation</class>
+				<userName>swit32</userName>
+				<password>swit32</password>
+				<ipAddress>100.100.0.34</ipAddress>
+	            <operationSystemName>Linux</operationSystemName>
+	</pingServer1>
+	
+	
+	
+	
+	<pingServer2>
+	            <class>com.airspan.testspan.jsystem.sysobjs.station.WorkStation</class>
+	            <userName>swit32</userName>
+				<password>swit32</password>
+				<ipAddress>100.100.0.146</ipAddress>
+	            <operationSystemName>Linux</operationSystemName>
+	</pingServer2>
+
+
+	
+</sut>
