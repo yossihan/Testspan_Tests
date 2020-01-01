@@ -461,15 +461,14 @@
 	</HO_attenuator>
 <!--	http://asil-svg-testspan:8070/reports/exec_468/tests/test_1341575828128-15/test.html-->
 	
-
     <ue_lists>
         <class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
-        <ueList index="0">
+        <ueList index="0"><!-- PTP UDP  -->
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.ptp</description>
             <ues>static1</ues>
         </ueList>
-        <ueList index="1">
+        <ueList index="1"><!-- PTP UDP  -->
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.pt2p</description>
             <ues>static1,static3</ues>
@@ -484,28 +483,26 @@
             <description>enb_1.pt3p</description>
             <ues>static1,static3</ues>
         </ueList>
-		<ueList index="4">
+		<ueList index="4"><!-- HO  -->
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1_enb_2_HO.ptp</description>
             <ues>dyn8,dyn9</ues>
         </ueList>
-		<ueList index="5">
+		<ueList index="5"><!-- EC  -->
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.7ptp</description>
             <ues>dyn8</ues>
         </ueList>
-		<ueList index="6">
+		<ueList index="6"><!-- QAM  -->
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_2.pt5p</description>
             <ues>static5</ues>
         </ueList>
-		<ueList index="7">
+		<ueList index="7"><!-- QAM  -->
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_2.p6p</description>
             <ues>static5;static6</ues>
         </ueList>
-		
-		
 		
     </ue_lists>
 
