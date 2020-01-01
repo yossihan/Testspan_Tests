@@ -108,7 +108,7 @@
             <readCommunity>public</readCommunity>
             <writeCommunity>private</writeCommunity>
             <snmpVersion>V2</snmpVersion>
-            <strAddress>100.35.1.254</strAddress>
+            <strAddress>198.15.1.254</strAddress>
         </snmp>     
     </ue1>
     <ue2>
@@ -125,7 +125,7 @@
             <readCommunity>public</readCommunity>
             <writeCommunity>private</writeCommunity>
             <snmpVersion>V2</snmpVersion>
-            <strAddress>100.35.1.254</strAddress>
+            <strAddress>198.16.1.254</strAddress>
         </snmp>     
     </ue2>
 </sut>
