@@ -22,7 +22,7 @@
 			<serialCom>
 				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
 				<comName>192.168.57.220</comName>
-				<port>4016</port>
+				<port>4015</port>
 			</serialCom>
 		</xlp>
 	</enb_1>
