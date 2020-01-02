@@ -21,8 +21,8 @@
 			<ipAddress>20.22.9.5</ipAddress>
 			<serialCom>
 				<class>com.airspan.testspan.jsystem.sysobjs.moxa.MoxaCom</class>
-				<comName>192.168.57.177</comName>
-				<port>2016</port>
+				<comName>192.168.57.220</comName>
+				<port>4016</port>
 			</serialCom>
 		</xlp>
 	</enb_1>
