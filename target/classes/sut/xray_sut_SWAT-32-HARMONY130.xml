@@ -15,7 +15,7 @@
 	<Mss>1290</Mss>
 	
 	<ues>static1;static3</ues> <!-- PTP UDP  -->
-	<dyns3>static1</dyns3><!-- EC -->  
+	<dyns3>static3</dyns3><!-- EC -->  
 	<unuesEC>static3;static5;static6;dyn9;dyn8</unuesEC>
 	
 	
@@ -368,7 +368,7 @@
         <ueList index="0"><!-- PTP UDP  -->
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.ptp</description>
-            <ues>static1</ues>
+            <ues>static3</ues>
         </ueList>
         <ueList index="1"><!-- PTP UDP  -->
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
