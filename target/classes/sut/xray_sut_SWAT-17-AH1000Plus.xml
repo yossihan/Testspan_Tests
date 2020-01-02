@@ -10,9 +10,11 @@
 
 <ues_type>
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
+	<MIB_Name_Volte_calls>asLteStkCellUeLinkStatusVolteCalls</MIB_Name_Volte_calls>
 </ues_type>
 
-<ues>ue4;ue5;ue6</ues>
+<ues>ue3;ue4;ue5;ue6</ues>
+<dyns4>ue4</dyns4><!-- Volte_calls -->
 
 	<!-- <SW_Path>123</SW_Path>
 	<SW_Image>123</SW_Image>
@@ -152,6 +154,12 @@
             <description>enb_1.pt3p</description>
             <ues>ue4,ue5,ue6</ues>
         </ueList>
+		<ueList index="3">
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.Volteptp</description>
+            <ues>ue4</ues>
+        </ueList>
+		
                
     </ue_lists>
 	
