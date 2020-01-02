@@ -16,7 +16,7 @@
 	
 	<ues>static1;static3</ues> <!-- PTP UDP  -->
 	<dyns3>static3</dyns3><!-- EC -->  
-	<unuesEC>static3;static5;static6;dyn9;dyn8</unuesEC>
+	<unuesEC>static1;static5;static6;dyn9;dyn8</unuesEC>
 	
 	
 	<ues_type>
