@@ -192,7 +192,7 @@
 			<lanIpAddress>192.17.4.254</lanIpAddress>
 			<iperfUlIpAddress>192.17.4.240</iperfUlIpAddress>
 			<iperfDlIpAddress>91.91.17.13</iperfDlIpAddress>
-			<imsi>200010001004113</imsi>
+			<imsi>200010001004365</imsi>
 			<connectedToEnb>enb_1</connectedToEnb>
 			<ueCategory>6</ueCategory>
 			<snmp>
