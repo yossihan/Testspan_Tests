@@ -25,6 +25,11 @@
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
 	<MIB_OID_enb_asLteStkCellUeLinkStatusEmergencyCalls>1.3.6.1.4.1.989.1.20.1.4.75.1.19</MIB_OID_enb_asLteStkCellUeLinkStatusEmergencyCalls>
 	<MIB_Name_volteCalls_status>asLteStkCellUeLinkStatusVolteCalls</MIB_Name_volteCalls_status>
+	<MIB_OID_UE_SNMP_Manual>1.3.6.1.4.1.17713.20.2.14.10.0</MIB_OID_UE_SNMP_Manual>
+	<MIB_OID_UE_SNMP_APNname>1.3.6.1.4.1.17713.20.2.14.11.0</MIB_OID_UE_SNMP_APNname>
+	<MIB_OID_UE_REBOOT>.1.3.6.1.4.1.17713.20.2.7.4.13.0</MIB_OID_UE_REBOOT>
+
+	
 	</ues_type>
 	
 	 
@@ -50,8 +55,10 @@
 		<Son_Profile>SR14.2 AirHarmony ANR PCI RSI Enable</Son_Profile>
 		<NeighbourManagement>AirHarmony All PCI</NeighbourManagement>
 		<softwareImage>SWIT32-Harmony130</softwareImage>
+		<eNodeB_Advanced_Configuration_Profile_emergency>SWIT32_Harmony_130_Emergency</eNodeB_Advanced_Configuration_Profile_emergency>
+		<eNodeB_Advanced_Configuration_Profile>SWIT32_Harmony_130</eNodeB_Advanced_Configuration_Profile>
 		
-
+		
 		<!-- CELL1 Profiles -->
 		<cell_1>	
 			<Cell_Adv_Profile>SR15.0 AirHarmony Defaults</Cell_Adv_Profile>
@@ -378,7 +385,7 @@
             <description>enb_1.pt2p</description>
             <ues>static1,static3</ues>
         </ueList>
-		<ueList index="0"><!-- PTP UDP  -->
+		<ueList index="2"><!-- PTP UDP  -->
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.pt3p</description><!-- VOLTE  -->
             <ues>static1</ues>
