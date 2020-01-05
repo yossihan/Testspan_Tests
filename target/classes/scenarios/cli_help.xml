@@ -39,7 +39,7 @@
     </target>
     <target name="t1">
         <jsystem showoutput="true">
-            <sysproperty key="jsystem.uuid" value="aae13eb1-8ee3-49c6-8c66-c0c427dc39a2"/>
+            <sysproperty key="jsystem.uuid" value="742f5d26-ef1f-4913-afbe-dd20eb122976"/>
             <sysproperty key="jsystem.parent.uuid" value="${jsystem.parent.uuid}.${jsystem.uuid}"/>
             <sysproperty key="jsystem.parent.name" value="${jsystem.parent.name}.${ant.project.name}"/>
             <test name="com.airspan.testspan.jsystem.tests.enodeb.raw.SendCommandsTest.sendCommands"/>
