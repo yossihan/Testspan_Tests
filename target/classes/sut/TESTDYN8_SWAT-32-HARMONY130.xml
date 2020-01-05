@@ -16,12 +16,15 @@
 	
 	<ues>static1;static3</ues> <!-- PTP UDP  -->
 	<dyns3>dyn8</dyns3><!-- EC -->  
+	<dyns4>static1</dyns4><!-- EC VC VOLTE --> 
 	<unuesEC>static1;static5;static6;dyn9;static3</unuesEC>
+	<unuesVOLTE>dyn8;static5;static6;dyn9;static3</unuesVOLTE>
 	
 	
 	<ues_type>
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
 	<MIB_OID_enb_asLteStkCellUeLinkStatusEmergencyCalls>1.3.6.1.4.1.989.1.20.1.4.75.1.19</MIB_OID_enb_asLteStkCellUeLinkStatusEmergencyCalls>
+	<MIB_Name_volteCalls_status>asLteStkCellUeLinkStatusVolteCalls</MIB_Name_volteCalls_status>
 	</ues_type>
 	
 	 
@@ -365,7 +368,7 @@
 
     <ue_lists>
         <class>com.airspan.testspan.jsystem.sysobjs.ue.UeLists</class>
-        <ueList index="0"><!-- PTP UDP  -->
+        <ueList index="0"><!-- EC  -->
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.ptp</description>
             <ues>dyn8</ues>
@@ -374,6 +377,11 @@
             <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
             <description>enb_1.pt2p</description>
             <ues>static1,static3</ues>
+        </ueList>
+		<ueList index="0"><!-- PTP UDP  -->
+            <class>com.airspan.testspan.jsystem.sysobjs.ue.UeList</class>
+            <description>enb_1.pt3p</description><!-- VOLTE  -->
+            <ues>static1</ues>
         </ueList>
 		
 		
