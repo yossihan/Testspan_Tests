@@ -25,12 +25,18 @@
 	<ues_type>
 	<MIB_Name_UE_stop_start>pmpDevCpeCellSelectionStartStopLte</MIB_Name_UE_stop_start>
 	<MIB_OID_enb_asLteStkCellUeLinkStatusEmergencyCalls>1.3.6.1.4.1.989.1.20.1.4.75.1.19</MIB_OID_enb_asLteStkCellUeLinkStatusEmergencyCalls>
+	<MIB_Name_volteCalls_status>asLteStkCellUeLinkStatusVolteCalls</MIB_Name_volteCalls_status>
+	<MIB_OID_UE_SNMP_Manual>1.3.6.1.4.1.17713.20.2.14.10.0</MIB_OID_UE_SNMP_Manual>
+	<MIB_OID_UE_SNMP_APNname>1.3.6.1.4.1.17713.20.2.14.11.0</MIB_OID_UE_SNMP_APNname>
+	<MIB_OID_UE_REBOOT>.1.3.6.1.4.1.17713.20.2.7.4.13.0</MIB_OID_UE_REBOOT>
+
 	</ues_type>
 	
 	 
 	<NetspanWS>
 		<class>com.airspan.testspan.jsystem.sysobj.netspan.web_services.ver_17_5.NetspanWsImpl</class>
 		<hostname>192.168.58.34</hostname>
+		
 	</NetspanWS>
 	
 	 <!-- AH4200 TDD B42  -->
@@ -50,6 +56,8 @@
 		<Son_Profile>SR14.2 AirHarmony ANR PCI RSI Enable</Son_Profile>
 		<NeighbourManagement>AirHarmony All PCI</NeighbourManagement>
 		<softwareImage>SWIT32-Harmony130</softwareImage>
+		<eNodeB_Advanced_Configuration_Profile_emergency>SWIT32_Harmony_130_Emergency</eNodeB_Advanced_Configuration_Profile_emergency>
+		<eNodeB_Advanced_Configuration_Profile>SWIT32_Harmony_130</eNodeB_Advanced_Configuration_Profile>
 		
 
 		<!-- CELL1 Profiles -->
@@ -107,6 +115,8 @@
 		<Ngh_Profile>SR16.5 AS_1250_GPL_SB_R1</Ngh_Profile>
 		<Son_Profile>SR16.5 AS_1250_GPL_SB_R1</Son_Profile>
 		<softwareImage>SWIT32-Airspeed84</softwareImage>
+		<eNodeB_Advanced_Configuration_Profile_emergency>SR16.5 AS_1250_GPL_SB_R1_Emergency</eNodeB_Advanced_Configuration_Profile_emergency>
+		<eNodeB_Advanced_Configuration_Profile>SR16.5 AS_1250_GPL_SB_R1</eNodeB_Advanced_Configuration_Profile>
 		                     <!-- CELL1 Profiles -->
 	 <cell_1>	
 		<Cell_Adv_Profile>SR16.5 AS_1250_GPL_SB_R1</Cell_Adv_Profile>
